@@ -17,7 +17,7 @@ $(document).ready(function () {
   //navbar ainmation
   $(window).scroll(function () {
     var appScroll = $(document).scrollTop();
-    if (appScroll >= 60) {
+    if (appScroll >= 20) {
       $("header .navbar").addClass("headerAnimate");
     } else {
       $("header .navbar").removeClass("headerAnimate");

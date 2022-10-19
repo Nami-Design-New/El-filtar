@@ -839,19 +839,44 @@ header .headerAnimate {
 
 .explanation {
   position: relative;
-  display: flex;
   background-color: #ffffff;
   border-radius: 16px;
   padding: 16px;
   margin-top: 20px;
 }
-.explanation img {
+.explanation .imgFrame {
+  display: block;
+  position: relative;
+}
+.explanation .imgFrame img {
   height: 200px;
   border-radius: 16px;
   margin-left: 16px;
-  display: block;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.explanation .imgFrame a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.explanation .imgFrame a i {
+  font-size: 48px !important;
+  color: #ff0000;
+}
+.explanation .imgFrame:hover a {
+  opacity: 1;
+  visibility: visible;
 }
 .explanation .info {
   padding: 10px 0;
@@ -879,9 +904,6 @@ header .headerAnimate {
 @media (max-width: 768px) {
   .explanation {
     flex-direction: column;
-  }
-  .explanation img {
-    margin: 0 0 10px;
   }
 }
 
@@ -985,6 +1007,129 @@ header .headerAnimate {
 }
 .shopPage .search input {
   border-right: none;
+}
+
+.routeNav {
+  display: flex;
+  align-items: center;
+  background-color: #d4f0ff;
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border: 2px solid #ffffff;
+}
+.routeNav .Back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0285ce;
+  color: #ffffff;
+  border-radius: 100%;
+  margin-left: 30px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  border: none;
+}
+.routeNav .Back:hover {
+  background-color: #ed693c;
+}
+.routeNav .Back .fa-angle-right:before {
+  content: "\f105";
+}
+.routeNav ul {
+  margin: 0;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+.routeNav ul li {
+  display: inline-flex;
+  padding: 10px;
+  color: #0285ce;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.routeNav ul li a {
+  transition: all 0.3s ease-in-out;
+  color: #0285ce;
+}
+.routeNav ul li a:hover {
+  color: #ed693c;
+}
+.routeNav ul li a.active {
+  color: #ed693c;
+  cursor: default;
+  font-weight: bold;
+}
+.routeNav ul li::after {
+  content: " / ";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.routeNav ul li:last-child:after {
+  display: none;
+}
+@media (max-width: 768px) {
+  .routeNav {
+    margin: 0px 0px 30px;
+    padding: 10px 10px;
+  }
+  .routeNav .Back {
+    margin-left: 20px;
+  }
+  .routeNav ul li a {
+    font-size: 16px;
+  }
+}
+
+.explanationPage .explanation {
+  margin-bottom: 20px;
+}
+.explanationPage .explanation img {
+  height: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.share {
+  margin-top: 40px;
+}
+.share h4 {
+  font-weight: bold;
+}
+.share .icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.share .icons a {
+  margin: 2px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  border: 1px solid #121212;
+  color: #121212;
+}
+.share .icons a i {
+  font-size: 18px !important;
+}
+.share .icons a:hover {
+  transform: translateY(-5px);
+  background-color: #ed693c;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 /* PC device :991px. */
