@@ -918,6 +918,9 @@ header .headerAnimate {
     flex-direction: row;
     overflow-x: scroll;
   }
+  .shopPage .side .categories::-webkit-scrollbar {
+    display: none !important;
+  }
   .shopPage .side .categories a {
     margin: 2px;
   }

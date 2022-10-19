@@ -886,6 +886,10 @@ header {
       @media (max-width: 991px) {
         flex-direction: row;
         overflow-x: scroll;
+        &::-webkit-scrollbar {
+         display: none !important;
+        }
+    
         a{
           margin: 2px;
         }
