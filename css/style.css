@@ -746,7 +746,7 @@ header .headerAnimate {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .sectionTitle .title {
   position: relative;
@@ -769,6 +769,10 @@ header .headerAnimate {
   align-items: center;
   font-weight: bold;
   font-size: 16px !important;
+}
+
+.newestProducts {
+  padding: 30px 0;
 }
 
 .productsSlider {
@@ -826,6 +830,59 @@ header .headerAnimate {
 .product:hover {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
   transform: translateY(-10px);
+}
+
+.explanations {
+  padding: 20px 0;
+  display: block;
+  position: relative;
+}
+
+.explanation {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+}
+.explanation img {
+  height: 200px;
+  border-radius: 16px;
+  margin-left: 16px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explanation .info {
+  padding: 10px 0;
+}
+.explanation .info .date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.explanation .info .date i {
+  font-size: 20px !important;
+  color: #ed693c;
+}
+.explanation .info .title {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.explanation .info p {
+  color: #777777;
+}
+.explanation .info .tags span {
+  padding: 2px;
+  color: #ed693c;
+}
+@media (max-width: 768px) {
+  .explanation {
+    flex-direction: column;
+  }
+  .explanation img {
+    margin: 0 0 10px;
+  }
 }
 
 /* PC device :991px. */
