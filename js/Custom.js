@@ -17,7 +17,7 @@ $(document).ready(function () {
   //navbar ainmation
   $(window).scroll(function () {
     var appScroll = $(document).scrollTop();
-    if (appScroll >= 20) {
+    if (appScroll >= 1) {
       $("header .navbar").addClass("headerAnimate");
     } else {
       $("header .navbar").removeClass("headerAnimate");
@@ -30,6 +30,20 @@ $(document).ready(function () {
     centeredSlides: true,
     loop: true,
     // effect: "fade",
+    speed: 700,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+  //product Details Slider
+  var productDetailsSlider = new Swiper(".productDetailsSlider", {
+    spaceBetween: 10,
+    centeredSlides: true,
+    pagination: {
+      el: ".productDetailsSliderPagination",
+      clickable: true,
+    },
     speed: 700,
     autoplay: {
       delay: 3000,
@@ -52,25 +66,22 @@ $(document).ready(function () {
     document.getElementById("hours").innerHTML = hours + "<span> ساعة </span> ";
   }, 1000);
 
-
-
-    //products Slider
-    var productsSlider = new Swiper(".productsSlider", {
-      navigation: {
-        nextEl: ".productsSliderNext",
-        prevEl: ".productsSliderPrev",
-      },
-      // centeredSlides: true,
-      // loop: true,
-      slidesPerView: "auto",
-      spaceBetween: 12,
-      speed: 1000,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-    });
-
+  //products Slider
+  var productsSlider = new Swiper(".productsSlider", {
+    navigation: {
+      nextEl: ".productsSliderNext",
+      prevEl: ".productsSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////

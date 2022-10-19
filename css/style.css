@@ -1132,6 +1132,85 @@ header .headerAnimate {
   border-color: #ffffff;
 }
 
+.productDetailsPage {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+.productDetailsPage .productDetailsSlider img {
+  height: 400px;
+  padding: 10px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productDetailsPage .info {
+  padding: 20px 10px;
+}
+.productDetailsPage .info .productImg {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.productDetailsPage .info .name {
+  color: #121212;
+  margin-bottom: 12px;
+}
+.productDetailsPage .info .price {
+  font-weight: bold;
+  font-size: 28px !important;
+  color: #ed693c;
+}
+.productDetailsPage .info .price span {
+  font-weight: normal;
+  font-size: 14px !important;
+  color: #777777;
+}
+.productDetailsPage .info .shop {
+  background: linear-gradient(90deg, #0285ce, #5bc3ff);
+  padding: 10px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productDetailsPage .info .shop .details {
+  display: flex;
+  align-items: center;
+}
+.productDetailsPage .info .shop .details img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100%;
+}
+.productDetailsPage .info .shop .details h4 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.productDetailsPage .info .shop .link {
+  color: #ffffff;
+}
+.productDetailsPage .info .Specifications {
+  margin: 20px 0;
+  padding: 20px 16px;
+  background: #e6f3fa;
+  border-radius: 16px;
+}
+.productDetailsPage .info .Specifications h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0285ce;
+}
+.productDetailsPage .info .Specifications li {
+  color: #777777;
+  margin-bottom: 10px;
+}
+
 /* PC device :991px. */
 @media (min-width: 991px) {
   body {
