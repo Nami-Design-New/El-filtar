@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8" />
@@ -30,7 +29,6 @@
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
   <!-- custom cursor  -->
   <div class="customCursor"></div>
@@ -46,7 +44,7 @@
     <div class="cartPage">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-8 p-0">
+          <div class=" col-md-6 col-lg-7 p-0">
             <div class="cart">
               <!-- shop data -->
               <a href="market.html" class="shop">
@@ -67,7 +65,7 @@
                     <div class="control">
                       <div class="quantity">
                         <button class="min"> - </button>
-                        <input type="text" class="qty" value="0" />
+                        <input type="text" class="qty" value="1" />
                         <button class="plus"> + </button>
                       </div>
                       <button class=" delete">
@@ -88,7 +86,7 @@
                     <div class="control">
                       <div class="quantity">
                         <button class="min"> - </button>
-                        <input type="text" class="qty" value="0" />
+                        <input type="text" class="qty" value="1" />
                         <button class="plus"> + </button>
                       </div>
                       <button class=" delete">
@@ -109,12 +107,87 @@
                     <div class="control">
                       <div class="quantity">
                         <button class="min"> - </button>
-                        <input type="text" class="qty" value="0" />
+                        <input type="text" class="qty" value="1" />
                         <button class="plus"> + </button>
                       </div>
                       <button class=" delete">
                         <i class="fa-solid fa-trash"></i>
                       </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-6 col-lg-5 p-0">
+            <div class="checkout">
+              <div class="sectionTitle">
+                <h3 class="title"> الفاتورة </h3>
+              </div>
+              <!-- bill -->
+              <ul class="bill">
+                <li>
+                  <img src="img/p4.png" alt="">
+                  <div class="info">
+                    <p> فلتر أكوا لايف خماسي المراحل </p>
+                    <div class="count">
+                      x <span> 2 </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/p4.png" alt="">
+                  <div class="info">
+                    <p> فلتر أكوا لايف خماسي المراحل </p>
+                    <div class="count">
+                      x <span> 2 </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/p4.png" alt="">
+                  <div class="info">
+                    <p> فلتر أكوا لايف خماسي المراحل </p>
+                    <div class="count">
+                      x <span> 2 </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between align-content-center flex-wrap py-2">
+                <div class="totalPrice">
+                  <p> الاجمالي : </p>
+                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                </div>
+                <!-- modal btn -->
+                <button data-bs-toggle="modal" data-bs-target="#shipping" class="btnOrange">
+                  اتمام الطلب
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="shipping" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title"> بيانات الشحن </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="phone" class="form-label"> <i class="fa-light fa-phone me-1"></i> رقم الهاتف </label>
+                            <input type="number" class="form-control" id="phone" placeholder="01**********">
+                          </div>
+                          <div class="mb-3">
+                            <label for="location" class="form-label"> <i class="fa-light fa-location-dot me-1"></i> العنوان </label>
+                            <input type="text" class="form-control" id="location" placeholder=" مثال : القاهرة شارع الجامعة ">
+                          </div>
+                          <div class="d-flex justify-content-end mt-5 ">
+                            <button type="button" class="btn mx-1 btn-outline-dark" data-bs-dismiss="modal"> الغاء </button>
+                            <button type="submit" class="btn mx-1 orange "> ارسال </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -163,5 +236,4 @@
     $("footer").load("footer.html");
   </script>
 </body>
-
 </html>

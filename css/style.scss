@@ -1085,6 +1085,10 @@ header {
     }
   }
 }
+.orange{
+  background-color: $mainColor;
+  color: $white-color !important;
+}
 
 .share {
   margin-top: 40px;
@@ -1120,6 +1124,7 @@ header {
 .btnOrange {
   background-color: $mainColor;
   color: $white-color;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1252,7 +1257,7 @@ header {
     background: none;
     font-size: 24px !important;
     color: $secondColor;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       min-width: 32px;
       min-height: 32px;
     }
@@ -1260,17 +1265,20 @@ header {
 }
 
 .cartPage {
+  margin: 30px 0;
   .cart {
     background-color: #e6f3fa;
     border-radius: 16px;
     padding: 40px 20px 20px;
-    margin: 30px 0;
     position: relative;
     border: 1px solid $secondColor;
     margin-left: 20px;
+    @media (max-width: 992px) {
+      padding: 30px 10px 10px;
+    }
     @media (max-width: 768px) {
       margin-left: 0;
-      padding: 30px 10px 10px;
+
     }
     .shop {
       background-color: $secondColor;
@@ -1302,7 +1310,7 @@ header {
         background-color: $white-color;
         border-radius: 16px;
         padding: 20px;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           padding: 10px;
         }
         a {
@@ -1313,7 +1321,7 @@ header {
             min-width: 150px;
             object-fit: contain;
             border-radius: 8px;
-            @media (max-width: 768px) {
+            @media (max-width: 992px) {
               height: 100px;
               min-width: 100px;
             }
@@ -1322,7 +1330,7 @@ header {
 
         .info {
           width: 100%;
-          @media (max-width: 768px) {
+          @media (max-width: 992px) {
             padding: 10px 0;
           }
           .name {
@@ -1330,6 +1338,59 @@ header {
             font-weight: bold;
             margin-bottom: 12px;
           }
+        }
+      }
+    }
+  }
+  .checkout{
+    background-color: $white-color;
+    // height: 100%;
+    border-radius: 16px;
+    padding: 20px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+  .totalPrice{
+    display: flex;
+    align-items: center;
+    p{
+      font-weight: bold;
+      margin-left: 5px;
+      color: $text-color;
+    }
+  }
+  .bill{
+    background-color: #e6f3fa;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    list-style: none;
+    li{
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed $white-color;
+      &:last-child{
+        padding-bottom: 0px;
+        border-bottom: none;
+      }
+      img{
+        width: 72px;
+        height: 72px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-left: 10px;
+      }
+      .info{
+        p{
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        span{
+          color: $mainColor;
+          font-weight: bold;
         }
       }
     }
