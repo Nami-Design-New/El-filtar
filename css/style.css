@@ -318,6 +318,7 @@ header {
   z-index: 1024;
   transition: all 0.3s ease-in-out;
   background-color: #f3f3f9;
+  margin-bottom: 20px;
 }
 header .number {
   background-color: #ed693c;
@@ -616,9 +617,6 @@ header .headerAnimate {
   background-color: #ed693c;
 }
 
-.main {
-  padding: 20px 0;
-}
 .main .mainSliderContainer {
   border-radius: 16px;
 }
@@ -907,9 +905,6 @@ header .headerAnimate {
   }
 }
 
-.shopPage {
-  padding: 30px 0;
-}
 .shopPage .side {
   background-color: #ffffff;
   border-radius: 16px;
@@ -990,7 +985,12 @@ header .headerAnimate {
 .shopPage .search {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .shopPage .search {
+    margin: 10px 0;
+  }
 }
 .shopPage .search .icon {
   width: 48px;
@@ -1015,10 +1015,9 @@ header .headerAnimate {
   background-color: #d4f0ff;
   border-radius: 8px;
   padding: 10px 30px;
-  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
-  margin-top: 20px;
   border: 2px solid #ffffff;
+  margin-bottom: 20px;
 }
 .routeNav .Back {
   position: relative;
@@ -1066,6 +1065,15 @@ header .headerAnimate {
   cursor: default;
   font-weight: bold;
 }
+.routeNav ul li a img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+  margin-left: 3px;
+}
 .routeNav ul li::after {
   content: " / ";
   font-size: 20px;
@@ -1080,7 +1088,7 @@ header .headerAnimate {
 }
 @media (max-width: 768px) {
   .routeNav {
-    margin: 0px 0px 30px;
+    margin: 0px;
     padding: 10px 10px;
   }
   .routeNav .Back {
@@ -1132,10 +1140,27 @@ header .headerAnimate {
   border-color: #ffffff;
 }
 
+.btnOrange {
+  background-color: #ed693c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 6px 0px #be3406;
+  color: #ffffff !important;
+  transition: all 0.3s ease-in-out;
+}
+.btnOrange:hover {
+  transform: translateY(8px);
+  box-shadow: none;
+}
+
 .productDetailsPage {
   background: #ffffff;
   border-radius: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .productDetailsPage .productDetailsSlider img {
   height: 400px;
