@@ -500,6 +500,9 @@ header {
             transition: 0.1s ease-in-out;
             transform: translateY(-50%);
           }
+          i {
+            color: $text-color;
+          }
           &:hover {
             i {
               color: $mainColor;
@@ -591,6 +594,10 @@ header {
   }
 }
 .main {
+  margin-bottom: 30px;
+  @media (max-width: 992px) {
+    margin-bottom: 0px;
+  }
   .mainSliderContainer {
     border-radius: 16px;
   }
@@ -1060,7 +1067,6 @@ header {
     }
   }
   @media (max-width: 768px) {
-    margin: 0px;
     padding: 10px 10px;
     .Back {
       margin-left: 20px;
@@ -1085,7 +1091,7 @@ header {
     }
   }
 }
-.orange{
+.orange {
   background-color: $mainColor;
   color: $white-color !important;
 }
@@ -1278,7 +1284,6 @@ header {
     }
     @media (max-width: 768px) {
       margin-left: 0;
-
     }
     .shop {
       background-color: $secondColor;
@@ -1342,7 +1347,7 @@ header {
       }
     }
   }
-  .checkout{
+  .checkout {
     background-color: $white-color;
     // height: 100%;
     border-radius: 16px;
@@ -1351,47 +1356,85 @@ header {
       margin-top: 20px;
     }
   }
-  .totalPrice{
+  .totalPrice {
     display: flex;
     align-items: center;
-    p{
+    p {
       font-weight: bold;
       margin-left: 5px;
       color: $text-color;
     }
   }
-  .bill{
+  .bill {
     background-color: #e6f3fa;
     border-radius: 16px;
     margin-top: 20px;
     padding: 20px;
     list-style: none;
-    li{
+    li {
       display: flex;
       align-items: center;
       padding-top: 10px;
       padding-bottom: 20px;
       border-bottom: 1px dashed $white-color;
-      &:last-child{
+      &:last-child {
         padding-bottom: 0px;
         border-bottom: none;
       }
-      img{
+      img {
         width: 72px;
         height: 72px;
         object-fit: contain;
         border-radius: 8px;
         margin-left: 10px;
       }
-      .info{
-        p{
+      .info {
+        p {
           font-weight: bold;
           margin-bottom: 10px;
         }
-        span{
+        span {
           color: $mainColor;
           font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+.contactUs {
+  form {
+    background-color: $white-color;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: contain;
+      margin-left: 20px;
+    }
+    .massageDiv {
+      width: 100%;
+    }
+    @media  (max-width: 992px) {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 0 20px;
+      }
+      .massageDiv {
+        margin-top: 50px;
       }
     }
   }

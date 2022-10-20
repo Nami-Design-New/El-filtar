@@ -529,6 +529,9 @@ header .navbar .dropdown .dropdown-menu a::before {
   transition: 0.1s ease-in-out;
   transform: translateY(-50%);
 }
+header .navbar .dropdown .dropdown-menu a i {
+  color: #777777;
+}
 header .navbar .dropdown .dropdown-menu a:hover i {
   color: #ed693c;
 }
@@ -617,6 +620,14 @@ header .headerAnimate {
   background-color: #ed693c;
 }
 
+.main {
+  margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .main {
+    margin-bottom: 0px;
+  }
+}
 .main .mainSliderContainer {
   border-radius: 16px;
 }
@@ -1089,7 +1100,6 @@ header .headerAnimate {
 }
 @media (max-width: 768px) {
   .routeNav {
-    margin: 0px;
     padding: 10px 10px;
   }
   .routeNav .Back {
@@ -1428,6 +1438,44 @@ header .headerAnimate {
 .cartPage .bill li .info span {
   color: #ed693c;
   font-weight: bold;
+}
+
+.contactUs form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.contactUs form img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
+}
+.contactUs form .massageDiv {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contactUs form img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .contactUs form {
+    flex-direction: column;
+  }
+  .contactUs form img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+  .contactUs form .massageDiv {
+    margin-top: 50px;
+  }
 }
 
 /* PC device :991px. */
