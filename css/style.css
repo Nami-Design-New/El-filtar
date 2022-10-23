@@ -1675,57 +1675,247 @@ input::placeholder {
 }
 .notificationsPage .notifications {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 16px;
   border-radius: 16px;
   list-style: none;
   margin: 0;
 }
-.notificationsPage .notifications li {
+.notificationsPage .notifications .info {
   margin-bottom: 5px;
   border-bottom: 1px dashed #777777;
   padding: 20px 0;
 }
-.notificationsPage .notifications li:last-child {
+.notificationsPage .notifications .info:last-child {
   border: none;
 }
-.notificationsPage .notifications li .title {
+.notificationsPage .notifications .info .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.notificationsPage .notifications li .title h3 {
+.notificationsPage .notifications .info .title h3 {
   font-weight: bold;
 }
-.notificationsPage .notifications li .title .time {
+.notificationsPage .notifications .info .title .time {
   white-space: nowrap;
 }
-.notificationsPage .notifications li .title .time span {
+.notificationsPage .notifications .info .title .time span {
   color: #ed693c;
   font-weight: bold;
 }
-.notificationsPage .notifications li p {
+.notificationsPage .notifications .info p {
   color: #777777;
   margin-bottom: 10px;
 }
-.notificationsPage .notifications li .filtars {
+.notificationsPage .notifications .info .filtars {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.notificationsPage .notifications li .filtars .filtar {
+.notificationsPage .notifications .info .filtars .filtar {
   background-color: #E6F3FA;
   padding: 10px;
   border-radius: 16px;
   margin: 5px;
   text-align: center;
 }
-.notificationsPage .notifications li .filtars .filtar img {
+.notificationsPage .notifications .info .filtars .filtar img {
   width: 80px;
   height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 10px;
+}
+
+.myOrders .orders {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.myOrders .orders .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.myOrders .orders .nav .nav-link {
+  width: 100%;
+  border: 3px solid transparent;
+  color: #121212;
+  transition: all 0.3s ease-in-out;
+}
+.myOrders .orders .nav .nav-link.active {
+  color: #0285ce;
+  border-bottom: 3px solid #0285ce;
+}
+.myOrders .orders .order {
+  padding: 16px;
+  position: relative;
+  border: 1px solid #0285ce;
+  background-color: #E6F3FA;
+  border-radius: 16px;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+.myOrders .orders .order .shop {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #0285ce;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.myOrders .orders .order .shop img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 5px;
+}
+.myOrders .orders .order .info {
+  margin-bottom: 20px;
+}
+.myOrders .orders .order .info .title {
+  font-weight: bold;
+  color: #777777;
+  font-size: 12px !important;
+  margin-bottom: 5px;
+}
+.myOrders .orders .order .info .data {
+  display: flex;
+  align-items: center;
+}
+.myOrders .orders .order .info .data h6 {
+  margin-left: 15px;
+}
+.myOrders .orders .order .info .data h6 i {
+  color: #0285ce;
+}
+
+.myOrderDetails {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+.myOrderDetails .shop {
+  background: linear-gradient(90deg, #0285ce, #5bc3ff);
+  padding: 10px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myOrderDetails .shop .details {
+  display: flex;
+  align-items: center;
+}
+.myOrderDetails .shop .details img {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100%;
+}
+.myOrderDetails .shop .details h4 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.myOrderDetails .shop .icon {
+  color: #ffffff;
+  background-color: #ed693c;
+  width: 48px;
+  height: 48px;
+  font-size: 20px !important;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myOrderDetails .order {
+  padding: 16px;
+  position: relative;
+  border: 1px solid #0285ce;
+  background-color: #E6F3FA;
+  border-radius: 16px;
+  height: 100%;
+}
+.myOrderDetails .order .info {
+  margin-bottom: 20px;
+}
+.myOrderDetails .order .info .title {
+  font-weight: bold;
+  color: #777777;
+  font-size: 12px !important;
+  margin-bottom: 5px;
+}
+.myOrderDetails .order .info .data {
+  display: flex;
+  align-items: center;
+}
+.myOrderDetails .order .info .data h6 {
+  margin-left: 15px;
+}
+.myOrderDetails .order .info .data h6 i {
+  color: #0285ce;
+}
+.myOrderDetails .bill {
+  background-color: #e6f3fa;
+  border-radius: 16px;
+  padding: 16px;
+  list-style: none;
+  border: 1px solid #0285ce;
+  margin: 0;
+  height: 100%;
+}
+.myOrderDetails .bill li {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ffffff;
+}
+.myOrderDetails .bill li:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.myOrderDetails .bill li img {
+  width: 72px;
+  height: 72px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.myOrderDetails .bill li .info p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.myOrderDetails .bill li .info span {
+  color: #ed693c;
+  font-weight: bold;
+}
+.myOrderDetails .status {
+  background-color: #eee;
+  border: 1px solid #777777;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.myOrderDetails .status .orderStatus {
+  background-color: #ed693c;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 16px;
 }
 
 /* PC device :991px. */
