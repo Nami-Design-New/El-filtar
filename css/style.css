@@ -1252,6 +1252,15 @@ header .headerAnimate {
   color: #777777;
   margin-bottom: 10px;
 }
+.productDetailsPage .productControl {
+  text-align: center;
+}
+.productDetailsPage .productControl .btn {
+  padding: 10px 30px;
+}
+.productDetailsPage .productControl .btn.btn-danger {
+  background-color: red;
+}
 
 .control {
   display: flex;

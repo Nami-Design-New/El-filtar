@@ -1223,6 +1223,17 @@ header {
       }
     }
   }
+
+  .productControl{
+    text-align: center;
+    .btn{
+      padding: 10px 30px;
+      &.btn-danger{
+        background-color: red;
+      }
+    }
+   
+  }
 }
 
 .control {

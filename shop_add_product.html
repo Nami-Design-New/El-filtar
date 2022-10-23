@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title -->
+  <title> الفلتر </title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.min.css" />
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <!-- dropify -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css"
+    integrity="sha512-In/+MILhf6UMDJU4ZhDL0R0fEpsp4D3Le23m6+ujDWXwl3whwpucJG1PEmI3B07nyJx+875ccs+yX2CqQJUxUw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- custom cursor  -->
+  <div class="customCursor"></div>
+  <div class="customCursorInner"></div>
+  <!-- end custom cursor  -->
+  <!-- ================ Header ================= -->
+  <header></header>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <section class="userType">
+      <div class="container">
+        <!-- ================ routeNav ================= -->
+        <div class="routeNav">
+          <button onclick="history.back()" class="Back">
+            <i class="fas fa-angle-right"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="index.html"> الرئيسية</a>
+            </li>
+            <li>
+              <a href="shop_products.html"> المنتجات </a>
+            </li>
+            <li>
+              <a href="#!" class="active"> اضافة منتج </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================ /routeNav ================= -->
+        <!-- login form -->
+        <section class="account">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6 m-auto p-0">
+                <div class="card">
+                  <form action="shop_product_details.html">
+                    <!-- input -->
+                    <div class="mb-3">
+                      <label class="form-label"> <i class="fa-solid fa-images me-1"></i> صور المنتج </label>
+                      <input type="file" class="dropify" />
+                    </div>
+                    <!-- input -->
+                    <div class="mb-3">
+                      <label for="storeName" class="form-label"> <i class="fa-solid fa-file-lines me-1"></i>
+                        اسم المنتج </label>
+                      <input type="text" class="form-control" id="storeName" placeholder=" مثال: فلتر خمس مراحل">
+                    </div>
+                    <!-- input -->
+                    <div class="mb-3">
+                      <label class="form-label"> <i class="fa-solid fa-square-list me-1"></i>
+                        القسم </label>
+                      <select name="" id="" class="select2">
+                        <option value=""> فلتر </option>
+                        <option value=""> قطع غيار </option>
+                        <option value=""> اكسسوارات </option>
+                      </select>
+                    </div>
+                    <!-- input -->
+                    <div class="mb-3">
+                      <label for="location" class="form-label"> <i class="fa-solid fa-money-bill-wave me-1"></i>
+                        سعر المنتج </label>
+                      <div class="input-group">
+                        <input type="number" class="form-control" id="location" placeholder=" 00 ">
+                        <span class="input-group-text"> ج.م </span>
+                      </div>
+                    </div>
+                    <!-- input -->
+                    <div class="mb-3">
+                      <label for="location" class="form-label"> <i class="fa-solid fa-feather me-1"></i>
+                        المواصفات </label>
+                        <textarea name="" id=""  rows="5" class="form-control"></textarea>
+                    </div>
+                    <!-- button  -->
+                    <div class="text-center">
+                      <button type="submit" class="btnOrange"> اضف </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <footer></footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- jquery  -->
+  <script src="js/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <!-- apper  -->
+  <script src="js/jquery.appear.js"></script>
+  <!-- swiper slider -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- select -->
+  <script src="js/select2.min.js"></script>
+  <!-- fancybox Img viewr and zoom -->
+  <script src="js/jquery.fancybox.min.js"></script>
+  <!-- animation on scroll -->
+  <script src="js/aos.js"></script>
+  <!-- odometer counterUp  -->
+  <script src="js/odometer.min.js"></script>
+  <!-- custom -->
+  <script src="js/Custom.js"></script>
+  <!-- load header and footer -->
+  <script>
+    $("header").load("header.html");
+    $("footer").load("footer.html");
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"
+    integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.dropify').dropify();
+  </script>
+</body>
+
+</html>
