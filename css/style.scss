@@ -1224,15 +1224,14 @@ header {
     }
   }
 
-  .productControl{
+  .productControl {
     text-align: center;
-    .btn{
+    .btn {
       padding: 10px 30px;
-      &.btn-danger{
+      &.btn-danger {
         background-color: red;
       }
     }
-   
   }
 }
 
@@ -1648,7 +1647,7 @@ input::placeholder {
       border-bottom: 1px dashed $text-color;
       padding: 20px 0;
 
-      &:last-child{
+      &:last-child {
         border: none;
       }
 
@@ -1668,22 +1667,22 @@ input::placeholder {
           }
         }
       }
-      p{
+      p {
         color: $text-color;
         margin-bottom: 10px;
       }
-      .filtars{
+      .filtars {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        .filtar{
-          background-color: #E6F3FA;
+        .filtar {
+          background-color: #e6f3fa;
           padding: 10px;
           border-radius: 16px;
           margin: 5px;
           text-align: center;
 
-          img{
+          img {
             width: 80px;
             height: 80px;
             object-fit: contain;
@@ -1695,76 +1694,75 @@ input::placeholder {
   }
 }
 
-.myOrders{
-  .orders{
+.myOrders {
+  .orders {
     padding: 16px;
     background-color: $white-color;
     border-radius: 16px;
 
-    .nav{
+    .nav {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap;
-      .nav-link{
+      .nav-link {
         width: 100%;
         border: 3px solid transparent;
         color: $black-color;
         transition: $transition;
-        &.active{
+        &.active {
           color: $secondColor;
           border-bottom: 3px solid $secondColor;
         }
       }
     }
 
-    .order{
+    .order {
       padding: 16px;
       position: relative;
       border: 1px solid $secondColor;
-      background-color: #E6F3FA;
+      background-color: #e6f3fa;
       border-radius: 16px;
       margin-top: 50px;
       padding-top: 40px;
 
-      .userName{
+      .userName {
         font-weight: bold;
         margin-bottom: 15px;
       }
-      .shop{
+      .shop {
         position: absolute;
         top: -20px;
         right: 20px;
         border-radius: 100px;
-        padding: 5px ;
+        padding: 5px;
         padding-left: 10px;
         background-color: $secondColor;
         color: $white-color;
         display: flex;
         align-items: center;
-        img{
+        img {
           width: 32px;
           height: 32px;
           border-radius: 100%;
           object-fit: cover;
           margin-left: 5px;
         }
-
       }
-      .info{
+      .info {
         margin-bottom: 20px;
-        .title{
+        .title {
           font-weight: bold;
           color: $text-color;
           font-size: 12px !important;
           margin-bottom: 5px;
         }
-        .data{
+        .data {
           display: flex;
           align-items: center;
-          h6{
+          h6 {
             margin-left: 15px;
-            i{
+            i {
               color: $secondColor;
             }
           }
@@ -1774,7 +1772,7 @@ input::placeholder {
   }
 }
 
-.myOrderDetails{
+.myOrderDetails {
   padding: 16px;
   background-color: $white-color;
   border-radius: 16px;
@@ -1813,27 +1811,27 @@ input::placeholder {
     }
   }
 
-  .order{
+  .order {
     padding: 16px;
     position: relative;
     border: 1px solid $secondColor;
-    background-color: #E6F3FA;
+    background-color: #e6f3fa;
     border-radius: 16px;
     height: 100%;
-    .info{
+    .info {
       margin-bottom: 20px;
-      .title{
+      .title {
         font-weight: bold;
         color: $text-color;
         font-size: 12px !important;
         margin-bottom: 5px;
       }
-      .data{
+      .data {
         display: flex;
         align-items: center;
-        h6{
+        h6 {
           margin-left: 15px;
-          i{
+          i {
             color: $secondColor;
           }
         }
@@ -1878,8 +1876,8 @@ input::placeholder {
       }
     }
   }
-  
-  .status{
+
+  .status {
     background-color: #eee;
     border: 1px solid $text-color;
     padding: 16px;
@@ -1889,13 +1887,69 @@ input::placeholder {
     flex-wrap: wrap;
     align-items: center;
 
-    .orderStatus{
+    .orderStatus {
       background-color: $mainColor;
       color: $white-color;
       padding: 16px 24px;
       border-radius: 16px;
     }
   }
+}
+
+.filterSetting {
+  .title {
+    margin: 30px 0;
+    h1 {
+      font-weight: bold;
+      margin-bottom: 10px;
+      span {
+        color: $mainColor;
+      }
+    }
+    h5 {
+      color: $text-color;
+    }
+  }
+  form {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: $white-color;
+    margin-bottom: 20px;
+
+    .form-label {
+      display: flex;
+      align-items: center;
+      i {
+        color: $mainColor;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .customCheck {
+    width: 24px;
+    height: 24px;
+    transition: $transition;
+    border-color: $mainColor;
+
+    &:checked {
+      background-color: $mainColor;
+      border-color: $mainColor; 
+    }
+
+  }
+  
+  .filtarDates{
+    display: none;
+    label{
+      white-space: nowrap;
+      min-width: 150px;
+    }
+    // input[type="date"]{
+    //   max-width: 200px;
+    // }
+  }
+  
 }
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================

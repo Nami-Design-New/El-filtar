@@ -55,19 +55,73 @@
       </div>
     </div>
     <!-- ================ /routeNav ================= -->
-    <section class="userType">
+    <section class="filterSetting">
       <div class="container">
         <div class="row justify-content-center">
           <div class=" col-lg-10 p-2">
             <div class="title">
-              <h1> من فضلك ادخل بيانات  <span> الفلتر </span> </h1>
-              <h5> بناء علي البيانات المدخله سنرسل لك تنبيهات بمواعيد التغيير للحفاظ علي صحتك .  </h5>
+              <h1> من فضلك ادخل بيانات <span> الفلتر </span> </h1>
+              <h5> بناء علي البيانات المدخله سنرسل لك تنبيهات بمواعيد التغيير للحفاظ علي صحتك . </h5>
             </div>
             <form action="">
-             
-              
-              
-              <button type="submit" class="btnOrange"> تاكيد </button>
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <!-- input -->
+                  <div class="mb-3">
+                    <label class="form-label"> <i class="fa-solid fa-pipe-circle-check me-2"></i>
+                      عدد المراحل </label>
+                    <select name="" id="" class="select2">
+                      <option value=""> 1 </option>
+                      <option value="" selected> 3 </option>
+                      <option value=""> 5 </option>
+                      <option value=""> 7 </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- input -->
+                  <div class="mb-3">
+                    <label class="form-label"> <i class="fa-solid fa-droplet me-2"></i>
+                      جودة المياة </label>
+                    <select name="" id="" class="select2">
+                      <option value=""> ضعيفة </option>
+                      <option value=""> متوسطه </option>
+                      <option value=""> جيدة </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- input -->
+              <div class="mb-3 d-flex justify-content-between align-items-center">
+                <label class="form-label mb-0 w-100" for="changeDate"> <i class="fa-solid fa-calendar-days me-2"></i> هل
+                  تتذكر
+                  تاريخ اخر تغيير ؟ </label>
+                <div class="form-check">
+                  <input class="form-check-input customCheck" type="checkbox" value="" id="changeDate">
+                </div>
+              </div>
+
+              <div class=" filtarDates ">
+                <!-- input -->
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                  <label class="form-label">الشمعة الاولي : </label>
+                  <input type="date" class="form-control">
+                </div>
+                <!-- input -->
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                  <label class="form-label"> الشمعة الثانية : </label>
+                  <input type="date" class="form-control">
+                </div>
+                <!-- input -->
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                  <label class="form-label"> الشمعة الثالثة :  </label>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <button type="submit" class="btnOrange" style="min-width: 200px ; margin: auto;"> تاكيد </button>
+              </div>
             </form>
           </div>
         </div>

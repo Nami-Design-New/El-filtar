@@ -95,6 +95,11 @@ $(document).ready(function () {
         .next()
         .val(+$(this).next().val() - 1);
   });
+
+  // show div
+  $("#changeDate").change(function () {
+    $(".filtarDates").slideToggle(300);
+  });
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////

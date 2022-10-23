@@ -1723,7 +1723,7 @@ input::placeholder {
   flex-wrap: wrap;
 }
 .notificationsPage .notifications .info .filtars .filtar {
-  background-color: #E6F3FA;
+  background-color: #e6f3fa;
   padding: 10px;
   border-radius: 16px;
   margin: 5px;
@@ -1762,7 +1762,7 @@ input::placeholder {
   padding: 16px;
   position: relative;
   border: 1px solid #0285ce;
-  background-color: #E6F3FA;
+  background-color: #e6f3fa;
   border-radius: 16px;
   margin-top: 50px;
   padding-top: 40px;
@@ -1855,7 +1855,7 @@ input::placeholder {
   padding: 16px;
   position: relative;
   border: 1px solid #0285ce;
-  background-color: #E6F3FA;
+  background-color: #e6f3fa;
   border-radius: 16px;
   height: 100%;
 }
@@ -1929,6 +1929,51 @@ input::placeholder {
   color: #ffffff;
   padding: 16px 24px;
   border-radius: 16px;
+}
+
+.filterSetting .title {
+  margin: 30px 0;
+}
+.filterSetting .title h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.filterSetting .title h1 span {
+  color: #ed693c;
+}
+.filterSetting .title h5 {
+  color: #777777;
+}
+.filterSetting form {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.filterSetting form .form-label {
+  display: flex;
+  align-items: center;
+}
+.filterSetting form .form-label i {
+  color: #ed693c;
+  font-size: 20px;
+}
+.filterSetting .customCheck {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+  border-color: #ed693c;
+}
+.filterSetting .customCheck:checked {
+  background-color: #ed693c;
+  border-color: #ed693c;
+}
+.filterSetting .filtarDates {
+  display: none;
+}
+.filterSetting .filtarDates label {
+  white-space: nowrap;
+  min-width: 150px;
 }
 
 /* PC device :991px. */
