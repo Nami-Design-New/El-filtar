@@ -42,26 +42,28 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
+    <!-- ================ routeNav ================= -->
+    <div class="container">
+      <div class="routeNav">
+        <button onclick="history.back()" class="Back">
+          <i class="fas fa-angle-right"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"> الرئيسية</a>
+          </li>
+          <li>
+            <a href="shop_products.html"> المنتجات </a>
+          </li>
+          <li>
+            <a href="#!" class="active"> اضافة منتج </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ================ /routeNav ================= -->
     <section class="userType">
       <div class="container">
-        <!-- ================ routeNav ================= -->
-        <div class="routeNav">
-          <button onclick="history.back()" class="Back">
-            <i class="fas fa-angle-right"></i>
-          </button>
-          <ul>
-            <li>
-              <a href="index.html"> الرئيسية</a>
-            </li>
-            <li>
-              <a href="shop_products.html"> المنتجات </a>
-            </li>
-            <li>
-              <a href="#!" class="active"> اضافة منتج </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ================ /routeNav ================= -->
         <!-- login form -->
         <section class="account">
           <div class="container">
@@ -103,7 +105,7 @@
                     <div class="mb-3">
                       <label for="location" class="form-label"> <i class="fa-solid fa-feather me-1"></i>
                         المواصفات </label>
-                        <textarea name="" id=""  rows="5" class="form-control"></textarea>
+                      <textarea name="" id="" rows="5" class="form-control"></textarea>
                     </div>
                     <!-- button  -->
                     <div class="text-center">

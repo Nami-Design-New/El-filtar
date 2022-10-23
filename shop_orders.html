@@ -38,23 +38,25 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
+    <!-- ================ routeNav ================= -->
+    <div class="container">
+      <div class="routeNav">
+        <button onclick="history.back()" class="Back">
+          <i class="fas fa-angle-right"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"> الرئيسية</a>
+          </li>
+          <li>
+            <a href="#!" class="active"> الطلبات </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ================ /routeNav ================= -->
     <section class="myOrders">
       <div class="container">
-        <!-- ================ routeNav ================= -->
-        <div class="routeNav">
-          <button onclick="history.back()" class="Back">
-            <i class="fas fa-angle-right"></i>
-          </button>
-          <ul>
-            <li>
-              <a href="index.html"> الرئيسية</a>
-            </li>
-            <li>
-              <a href="#!" class="active"> الطلبات </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ================ /routeNav ================= -->
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 p-0">
             <div class="orders">
@@ -93,7 +95,6 @@
                       </a>
                     </div>
                   </div>
-                
                   <!-- order -->
                   <div class="order mt-3 pt-3">
                     <h4 class="userName"> عماد مجدي </h4>
@@ -117,36 +118,31 @@
                       </a>
                     </div>
                   </div>
-                
-                  
                 </div>
                 <div class="tab-pane fade" id="lastOrders" role="tabpanel" aria-labelledby="lastOrders-tab">
-               
-                    <!-- order -->
-                    <div class="order mt-3 pt-3">
-                      <h4 class="userName">  محمدالسدودي </h4>
-                      <div class="info">
-                        <p class="title"> وقت الطلب : </p>
-                        <div class="data">
-                          <h6><i class="fa-solid fa-calendar-days me-1"></i> 20/12/2022 </h6>
-                          <h6> <i class="fa-solid fa-clock me-1"></i> 03:22 م </h6>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-content-center flex-wrap">
-                        <div class="info">
-                          <p class="title"> رقم الطلب : </p>
-                          <div class="data">
-                            <h6> <i class="fa-solid fa-ticket me-1"></i> #659998 </h6>
-                          </div>
-                        </div>
-                        <a href="shop_orders_details.html" class="animatedLink">
-                          التفاصيل
-                          <i class="fa-regular fa-left-long ms-2"><span></span></i>
-                        </a>
+                  <!-- order -->
+                  <div class="order mt-3 pt-3">
+                    <h4 class="userName"> محمدالسدودي </h4>
+                    <div class="info">
+                      <p class="title"> وقت الطلب : </p>
+                      <div class="data">
+                        <h6><i class="fa-solid fa-calendar-days me-1"></i> 20/12/2022 </h6>
+                        <h6> <i class="fa-solid fa-clock me-1"></i> 03:22 م </h6>
                       </div>
                     </div>
-                  
-
+                    <div class="d-flex justify-content-between align-content-center flex-wrap">
+                      <div class="info">
+                        <p class="title"> رقم الطلب : </p>
+                        <div class="data">
+                          <h6> <i class="fa-solid fa-ticket me-1"></i> #659998 </h6>
+                        </div>
+                      </div>
+                      <a href="shop_orders_details.html" class="animatedLink">
+                        التفاصيل
+                        <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -38,26 +38,28 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
+    <!-- ================ routeNav ================= -->
+    <div class="container">
+      <div class="routeNav">
+        <button onclick="history.back()" class="Back">
+          <i class="fas fa-angle-right"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"> الرئيسية</a>
+          </li>
+          <li>
+            <a href="my_orders.html"> طلباتي </a>
+          </li>
+          <li>
+            <a href="#!" class="active"> تفاصيل الطلب </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ================ /routeNav ================= -->
     <section class="myOrderDetailsPage">
       <div class="container">
-        <!-- ================ routeNav ================= -->
-        <div class="routeNav">
-          <button onclick="history.back()" class="Back">
-            <i class="fas fa-angle-right"></i>
-          </button>
-          <ul>
-            <li>
-              <a href="index.html"> الرئيسية</a>
-            </li>
-            <li>
-              <a href="my_orders.html"> طلباتي </a>
-            </li>
-            <li>
-              <a href="#!" class="active"> تفاصيل الطلب </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ================ /routeNav ================= -->
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 p-0">
             <div class="myOrderDetails">
@@ -81,7 +83,6 @@
                         <h6> <i class="fa-solid fa-clock me-1"></i> 03:22 م </h6>
                       </div>
                     </div>
-
                     <div class="info">
                       <p class="title"> رقم الطلب : </p>
                       <div class="data">
@@ -100,7 +101,6 @@
                         <h6> <i class="fa-solid fa-location-dot me-1"></i> القاهرة شارع الجامعة </h6>
                       </div>
                     </div>
-
                   </div>
                 </div>
                 <div class="col-md-6 p-md-2 p-0">

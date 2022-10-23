@@ -42,26 +42,29 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
+    <!-- ================ routeNav ================= -->
+    <div class="container">
+
+      <div class="routeNav">
+        <button onclick="history.back()" class="Back">
+          <i class="fas fa-angle-right"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="login.html"> تسجيل الدخول </a>
+          </li>
+          <li>
+            <a href="user_type.html"> نوع المستخدم </a>
+          </li>
+          <li>
+            <a href="#!" class="active"> تسجيل تاجر </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ================ /routeNav ================= -->
     <section class="userType">
       <div class="container">
-        <!-- ================ routeNav ================= -->
-        <div class="routeNav">
-          <button onclick="history.back()" class="Back">
-            <i class="fas fa-angle-right"></i>
-          </button>
-          <ul>
-            <li>
-              <a href="login.html"> تسجيل الدخول </a>
-            </li>
-            <li>
-              <a href="user_type.html"> نوع المستخدم </a>
-            </li>
-            <li>
-              <a href="#!" class="active"> تسجيل تاجر </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ================ /routeNav ================= -->
         <!-- login form -->
         <section class="account">
           <div class="container">
@@ -75,7 +78,7 @@
                         <input type="file" class="dropify" data-default-file="img/providerProfile.png" />
                       </div>
                     </div>
-                    
+
                     <!-- input -->
                     <div class="mb-3">
                       <label for="firstName" class="form-label"> <i class="fa-solid fa-user me-1"></i>
