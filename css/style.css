@@ -1481,7 +1481,7 @@ header .headerAnimate {
 .account .card {
   isolation: isolate;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   border-radius: 14px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
 }
@@ -1659,11 +1659,15 @@ input::placeholder {
 .profileImg .dropify-wrapper {
   width: 200px;
   height: 200px;
+  min-height: 200px;
   margin: auto;
   border-radius: 100%;
 }
-.profileImg .dropify-wrapper .dropify-message {
-  position: absolute;
+@media (max-width: 768px) {
+  .profileImg .dropify-wrapper {
+    border-radius: 8px;
+    height: auto;
+  }
 }
 
 /* PC device :991px. */
