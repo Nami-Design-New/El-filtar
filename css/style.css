@@ -1670,6 +1670,64 @@ input::placeholder {
   }
 }
 
+.notificationsPage {
+  margin-bottom: 20px;
+}
+.notificationsPage .notifications {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  list-style: none;
+  margin: 0;
+}
+.notificationsPage .notifications li {
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #777777;
+  padding: 20px 0;
+}
+.notificationsPage .notifications li:last-child {
+  border: none;
+}
+.notificationsPage .notifications li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.notificationsPage .notifications li .title h3 {
+  font-weight: bold;
+}
+.notificationsPage .notifications li .title .time {
+  white-space: nowrap;
+}
+.notificationsPage .notifications li .title .time span {
+  color: #ed693c;
+  font-weight: bold;
+}
+.notificationsPage .notifications li p {
+  color: #777777;
+  margin-bottom: 10px;
+}
+.notificationsPage .notifications li .filtars {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.notificationsPage .notifications li .filtars .filtar {
+  background-color: #E6F3FA;
+  padding: 10px;
+  border-radius: 16px;
+  margin: 5px;
+  text-align: center;
+}
+.notificationsPage .notifications li .filtars .filtar img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 10px;
+}
+
 /* PC device :991px. */
 @media (min-width: 991px) {
   body {
