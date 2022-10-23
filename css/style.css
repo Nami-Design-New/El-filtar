@@ -1656,13 +1656,14 @@ input::placeholder {
   font-size: 12px !important;
 }
 
-.profileImg {
+.profileImg .dropify-wrapper {
   width: 200px;
   height: 200px;
   margin: auto;
-}
-.profileImg .dropify-wrapper {
   border-radius: 100%;
+}
+.profileImg .dropify-wrapper .dropify-message {
+  position: absolute;
 }
 
 /* PC device :991px. */
