@@ -1758,6 +1758,10 @@ input::placeholder {
   margin-top: 50px;
   padding-top: 40px;
 }
+.myOrders .orders .order .userName {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 .myOrders .orders .order .shop {
   position: absolute;
   top: -20px;
