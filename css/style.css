@@ -1471,11 +1471,174 @@ header .headerAnimate {
     width: 100%;
     height: auto;
     margin-left: 0;
-    padding: 0 20px;
+    padding: 0 40px;
   }
   .contactUs form .massageDiv {
     margin-top: 50px;
   }
+}
+
+.account .card {
+  isolation: isolate;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
+}
+@media (max-width: 768px) {
+  .account .card {
+    padding: 30px 10px;
+  }
+}
+.account .card .loginImg {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px 0 50px;
+}
+@media (max-width: 768px) {
+  .account .card .loginImg {
+    padding: 0 30px;
+  }
+}
+.account .socialLogin {
+  text-align: center;
+}
+.account .socialLogin .line {
+  padding: 10px 20px;
+  margin: auto;
+  position: relative;
+}
+.account .socialLogin .line span {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  padding: 0px 20px;
+}
+.account .socialLogin .line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+  border-radius: 10px;
+}
+.account .socialLogin .social {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.account .socialLogin .social .loginIcon {
+  padding: 10px 16px;
+  margin: 0px 5px;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.account .socialLogin .social .loginIcon.facebook {
+  background-color: #4267b2;
+}
+.account .socialLogin .social .loginIcon.gmail {
+  background-color: #db4437;
+}
+.account .socialLogin .social .loginIcon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1882352941);
+}
+
+.vCode {
+  direction: ltr;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.vCode .vCode-input {
+  min-width: 40px;
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+  border: none;
+  border-bottom: 2px solid #ed693c;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px 4px 0 0;
+}
+
+.userType {
+  padding-bottom: 30px;
+}
+.userType .title {
+  margin: 30px 0;
+}
+.userType .title h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.userType .title h1 span {
+  color: #ed693c;
+}
+.userType .title h5 {
+  color: #777777;
+}
+.userType .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .userType .type {
+    flex-direction: column;
+  }
+}
+.userType .type .form-check {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.userType .type .form-check .form-check-input {
+  display: none;
+}
+.userType .type .form-check .form-check-label {
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.userType .type .form-check .form-check-label .info h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.userType .type .form-check .form-check-label .info p {
+  color: #777777;
+}
+.userType .type .form-check .form-check-label img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .userType .type .form-check .form-check-label img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.userType .type .form-check .form-check-input:checked ~ .form-check-label {
+  border: 3px solid #ed693c;
+}
+.userType .btnOrange {
+  min-width: 200px;
+  margin: auto;
 }
 
 /* PC device :991px. */

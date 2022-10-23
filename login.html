@@ -38,24 +38,34 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-    <section class="contactUs">
+
+
+    <!-- login form -->
+    <section class="account">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <form action="">
-              <img src="img/contact.svg" alt="">
-              <div class="massageDiv">
-                <label for="massage" class="form-label"> <i class="fa-solid fa-feather me-1"></i> الرسالة
-                </label>
-                <textarea id="massage" rows="10" class="form-control" placeholder=" اكتب هنا ..."></textarea>
-                <button type="submit" class="btnOrange mt-2 w-100"> ارسال </button>
-              </div>
-            </form>
+        <div class="row">
+          <div class="col-md-8 col-lg-6 m-auto p-2">
+            <div class="card">
+              <img class="loginImg" src="img/login.svg" alt="">
+              <form action="code.html" class="row">
+                <div class="col-12 p-2">
+                  <label for="phone" class="form-label"> <i class="fas fa-phone me-2"></i> رقم الهاتف </label>
+                  <input type="number" class="form-control" id="phone" placeholder=" ادخل رقم الهاتف ">
+                </div>
+
+                <div class="col-12 p-2 text-center">
+                  <button type="submit" class="animatedLink">
+                    تسجيل الدخول
+                    <i class="fa-regular fa-left-long ms-2"><span></span></i>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
+
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <!--((((((((((((((((( / content )))))))))))))))))))-->

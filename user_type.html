@@ -38,22 +38,58 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-    <section class="contactUs">
+    <section class="userType">
       <div class="container">
+        <!-- ================ routeNav ================= -->
+        <div class="routeNav">
+          <button onclick="history.back()" class="Back">
+            <i class="fas fa-angle-right"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="login.html"> تسجيل الدخول </a>
+            </li>
+            <li>
+              <a href="#!" class="active"> نوع المستخدم </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================ /routeNav ================= -->
+
         <div class="row justify-content-center">
-          <div class="col-lg-10">
+          <div class=" col-lg-10 p-2">
+            <div class="title">
+              <h1> اهلا بك في تطبيق <span> الفلتر </span> </h1>
+              <h5> من فضلك اختر نوع المستخدم ... </h5>
+            </div>
             <form action="">
-              <img src="img/contact.svg" alt="">
-              <div class="massageDiv">
-                <label for="massage" class="form-label"> <i class="fa-solid fa-feather me-1"></i> الرسالة
-                </label>
-                <textarea id="massage" rows="10" class="form-control" placeholder=" اكتب هنا ..."></textarea>
-                <button type="submit" class="btnOrange mt-2 w-100"> ارسال </button>
+              <!-- type -->
+              <div class="type">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="type1">
+                  <label class="form-check-label" for="type1">
+                    <div class="info">
+                      <h2> مستخدم </h2>
+                      <p> استمتع بخدمات تنبيه لمواعيد تغيير الفلتر وكذلك الشراء من المتجر . </p>
+                    </div>
+                    <img src="img/user.png" alt="">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="type" id="type2">
+                  <label class="form-check-label" for="type2">
+                    <div class="info">
+                      <h2> تاجر </h2>
+                      <p> قم ببيع منتجاتك من الفلاتر وقطع الغيار والاكسسوارت وغيرها من خلال تطبيقنا . </p>
+                    </div>
+                    <img src="img/provider.png" alt="">
+                  </label>
+                </div>
               </div>
+              <button type="submit" class="btnOrange"> تاكيد </button>
             </form>
           </div>
         </div>
-
       </div>
     </section>
   </content>
