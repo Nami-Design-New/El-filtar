@@ -1004,7 +1004,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     background-color: $secondColor;
     color: $white-color;
@@ -1606,10 +1606,8 @@ header {
   }
 }
 
-input {
-  &::placeholder {
-    font-size: 12px !important;
-  }
+input::placeholder {
+  font-size: 12px !important;
 }
 
 .profileImg {
@@ -1618,7 +1616,7 @@ input {
     height: 200px;
     margin: auto;
     border-radius: 100%;
-    .dropify-message{
+    .dropify-message {
       position: absolute;
     }
   }
