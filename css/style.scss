@@ -1459,6 +1459,12 @@ header {
       }
     }
   }
+
+  label{
+    i{
+      color: $secondColor;
+    }
+  }
   .socialLogin {
     text-align: center;
     .line {
@@ -1601,6 +1607,20 @@ header {
   }
 }
 
+input{
+  &::placeholder{
+    font-size: 12px !important;
+  }
+}
+
+.profileImg{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  .dropify-wrapper{
+    border-radius: 100%;
+  }
+}
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================

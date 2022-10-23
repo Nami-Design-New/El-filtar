@@ -146,6 +146,8 @@ $(document).ready(function () {
     });
   }
   aosDelay();
+  // dropify
+  $(".dropify").dropify();
   // tooltip
   var tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
