@@ -216,7 +216,6 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
-
 .fancybox__track,
 .fancybox__content,
 .carousel__track {
@@ -630,12 +629,10 @@ header {
     // }
   }
 }
-
 .sideData {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-
   @media (min-width: 768px) and (max-width: 991px) {
     flex-wrap: nowrap;
   }
@@ -648,7 +645,6 @@ header {
   border-radius: 16px;
   border: 2px solid $white-color;
   width: 100%;
-
   .data {
     padding: 10px 20px;
     color: $white-color;
@@ -667,7 +663,6 @@ header {
     }
   }
 }
-
 .nextChangeDate {
   border: 2px solid $mainColor;
   display: flex;
@@ -695,7 +690,6 @@ header {
     }
   }
 }
-
 .timer {
   display: flex;
   justify-content: center;
@@ -719,13 +713,11 @@ header {
     }
   }
 }
-
 .sectionTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-
   .title {
     position: relative;
     font-weight: bold;
@@ -758,7 +750,6 @@ header {
     width: auto !important;
   }
 }
-
 .price {
   font-weight: bold;
   font-size: 22px !important;
@@ -769,7 +760,6 @@ header {
     color: $text-color;
   }
 }
-
 .product {
   border: 1px solid #dadada;
   border-radius: 16px;
@@ -789,7 +779,6 @@ header {
     margin-bottom: 12px;
     max-width: 170px;
   }
-
   .shop {
     display: flex;
     align-items: center;
@@ -804,13 +793,11 @@ header {
       color: $black-color;
     }
   }
-
   &:hover {
     box-shadow: $BigShadow;
     transform: translateY(-10px);
   }
 }
-
 .explanations {
   padding: 20px 0;
   display: block;
@@ -857,7 +844,6 @@ header {
       }
     }
   }
-
   .info {
     padding: 10px 0;
     .date {
@@ -883,12 +869,10 @@ header {
       }
     }
   }
-
   @media (max-width: 768px) {
     flex-direction: column;
   }
 }
-
 .shopPage {
   .side {
     background-color: $white-color;
@@ -896,7 +880,6 @@ header {
     padding: 20px;
     position: sticky;
     top: 100px;
-
     .categories {
       display: flex;
       flex-direction: column;
@@ -913,14 +896,12 @@ header {
           color: $white-color;
         }
       }
-
       @media (max-width: 991px) {
         flex-direction: row;
         overflow-x: scroll;
         &::-webkit-scrollbar {
           display: none !important;
         }
-
         a {
           margin: 2px;
         }
@@ -928,13 +909,11 @@ header {
     }
     .priceFilter {
       padding-top: 10px;
-
       .priceLabel {
         i {
           color: $mainColor;
         }
       }
-
       .inputsDiv {
         display: flex;
         align-items: center;
@@ -948,7 +927,6 @@ header {
           border: none;
           border-bottom: 1px solid $text-color;
           text-align: right !important;
-
           &::placeholder {
             text-align: right !important;
             font-size: 12px;
@@ -989,7 +967,6 @@ header {
     }
   }
 }
-
 .routeNav {
   display: flex;
   align-items: center;
@@ -1031,7 +1008,6 @@ header {
       color: $secondColor;
       transition: $transition;
       position: relative;
-
       a {
         transition: $transition;
         color: $secondColor;
@@ -1080,7 +1056,6 @@ header {
     }
   }
 }
-
 .explanationPage {
   .explanation {
     margin-bottom: 20px;
@@ -1095,7 +1070,6 @@ header {
   background-color: $mainColor;
   color: $white-color !important;
 }
-
 .share {
   margin-top: 40px;
   h4 {
@@ -1144,7 +1118,6 @@ header {
     box-shadow: none;
   }
 }
-
 .productDetailsPage {
   background: $white-color;
   border-radius: 16px;
@@ -1157,7 +1130,6 @@ header {
       object-fit: contain;
     }
   }
-
   .info {
     padding: 20px 10px;
     .productImg {
@@ -1211,7 +1183,6 @@ header {
       padding: 20px 16px;
       background: #e6f3fa;
       border-radius: 16px;
-
       h4 {
         font-weight: bold;
         margin-bottom: 15px;
@@ -1223,7 +1194,6 @@ header {
       }
     }
   }
-
   .productControl {
     text-align: center;
     .btn {
@@ -1234,12 +1204,10 @@ header {
     }
   }
 }
-
 .control {
   display: flex;
   align-items: center;
   margin-top: 10px;
-
   .delete {
     border: none;
     background: none;
@@ -1248,7 +1216,6 @@ header {
     margin: 0px 10px;
   }
 }
-
 .quantity {
   border: 1px solid $secondColor;
   background-color: $white-color;
@@ -1279,7 +1246,6 @@ header {
     }
   }
 }
-
 .cartPage {
   margin: 30px 0;
   .cart {
@@ -1342,7 +1308,6 @@ header {
             }
           }
         }
-
         .info {
           width: 100%;
           @media (max-width: 992px) {
@@ -1411,7 +1376,6 @@ header {
     }
   }
 }
-
 .contactUs {
   form {
     background-color: $white-color;
@@ -1434,7 +1398,6 @@ header {
         height: 300px;
       }
     }
-
     @media (max-width: 768px) {
       flex-direction: column;
       img {
@@ -1449,7 +1412,6 @@ header {
     }
   }
 }
-
 .account {
   .card {
     isolation: isolate;
@@ -1469,7 +1431,6 @@ header {
       }
     }
   }
-
   label {
     i {
       color: $secondColor;
@@ -1523,7 +1484,6 @@ header {
     }
   }
 }
-
 .vCode {
   direction: ltr;
   // border-bottom: 2px dashed #eee;
@@ -1542,10 +1502,8 @@ header {
     border-radius: 4px 4px 0 0;
   }
 }
-
 .userType {
   padding-bottom: 30px;
-
   .title {
     margin: 30px 0;
     h1 {
@@ -1567,7 +1525,6 @@ header {
     @media (max-width: 768px) {
       flex-direction: column;
     }
-
     .form-check {
       padding: 5px;
       width: 100%;
@@ -1615,11 +1572,9 @@ header {
     margin: auto;
   }
 }
-
 input::placeholder {
   font-size: 12px !important;
 }
-
 .profileImg {
   .dropify-wrapper {
     width: 200px;
@@ -1633,7 +1588,6 @@ input::placeholder {
     }
   }
 }
-
 .notificationsPage {
   margin-bottom: 20px;
   .notifications {
@@ -1646,11 +1600,9 @@ input::placeholder {
       margin-bottom: 5px;
       border-bottom: 1px dashed $text-color;
       padding: 20px 0;
-
       &:last-child {
         border: none;
       }
-
       .title {
         display: flex;
         justify-content: space-between;
@@ -1681,7 +1633,6 @@ input::placeholder {
           border-radius: 16px;
           margin: 5px;
           text-align: center;
-
           img {
             width: 80px;
             height: 80px;
@@ -1693,13 +1644,11 @@ input::placeholder {
     }
   }
 }
-
 .myOrders {
   .orders {
     padding: 16px;
     background-color: $white-color;
     border-radius: 16px;
-
     .nav {
       display: flex;
       justify-content: center;
@@ -1716,7 +1665,6 @@ input::placeholder {
         }
       }
     }
-
     .order {
       padding: 16px;
       position: relative;
@@ -1725,7 +1673,6 @@ input::placeholder {
       border-radius: 16px;
       margin-top: 50px;
       padding-top: 40px;
-
       .userName {
         font-weight: bold;
         margin-bottom: 15px;
@@ -1771,7 +1718,6 @@ input::placeholder {
     }
   }
 }
-
 .myOrderDetails {
   padding: 16px;
   background-color: $white-color;
@@ -1810,7 +1756,6 @@ input::placeholder {
       align-items: center;
     }
   }
-
   .order {
     padding: 16px;
     position: relative;
@@ -1838,7 +1783,6 @@ input::placeholder {
       }
     }
   }
-
   .bill {
     background-color: #e6f3fa;
     border-radius: 16px;
@@ -1876,7 +1820,6 @@ input::placeholder {
       }
     }
   }
-
   .status {
     background-color: #eee;
     border: 1px solid $text-color;
@@ -1886,7 +1829,6 @@ input::placeholder {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-
     .orderStatus {
       background-color: $mainColor;
       color: $white-color;
@@ -1895,7 +1837,6 @@ input::placeholder {
     }
   }
 }
-
 .filterSetting {
   .title {
     margin: 30px 0;
@@ -1915,7 +1856,6 @@ input::placeholder {
     border-radius: 16px;
     background-color: $white-color;
     margin-bottom: 20px;
-
     .form-label {
       display: flex;
       align-items: center;
@@ -1925,23 +1865,19 @@ input::placeholder {
       }
     }
   }
-
   .customCheck {
     width: 24px;
     height: 24px;
     transition: $transition;
     border-color: $mainColor;
-
     &:checked {
       background-color: $mainColor;
-      border-color: $mainColor; 
+      border-color: $mainColor;
     }
-
   }
-  
-  .filtarDates{
+  .filtarDates {
     display: none;
-    label{
+    label {
       white-space: nowrap;
       min-width: 150px;
     }
@@ -1949,8 +1885,174 @@ input::placeholder {
     //   max-width: 200px;
     // }
   }
-  
 }
+
+// footer {
+//   background: linear-gradient($body-color, $white-color);
+//   padding-top: 50px;
+//   margin-top: 20px;
+//   // color: $white-color;
+//   .title {
+//     font-weight: bold;
+//     position: relative;
+//     padding-bottom: 20px;
+//     margin-bottom: 30px;
+//     display: inline-block;
+//     &::after {
+//       content: "";
+//       width: 90%;
+//       height: 2px;
+//       background-color: $mainColor;
+//       position: absolute;
+//       right: 0;
+//       bottom: 4px;
+//     }
+//     &::before {
+//       content: "";
+//       width: 75%;
+//       height: 2px;
+//       background-color: $mainColor;
+//       position: absolute;
+//       right: 0;
+//       bottom: 0;
+//     }
+//   }
+
+//   .copyR {
+//     padding: 20px;
+//     position: relative;
+//     background-color: #E6F3FA;
+//     color: $black-color;
+//     margin-top: 50px;
+//     .company {
+//       color: $mainColor;
+//       font-weight: bold;
+//     }
+//   }
+// }
+
+
+
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  transition: .3s ease-in-out;
+  color: $text-color;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+
+  .container {
+      margin: 0px auto;
+      max-width: 940px;
+
+      &::before {
+          z-index: -1;
+          content: "";
+          display: block;
+          width: 200%;
+          height: 0px;
+          padding-top: 200%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: 50% 0px;
+          background-image: url("../img/footer.svg");
+          position: absolute;
+          top: 80px;
+          left: -50%;
+
+          filter: drop-shadow(0px 0px 30px #00000010);
+
+          @media (max-width:768px) {
+              width: 350%;
+              padding-top: 350%;
+              left: -130%;
+          }
+      }
+  }
+
+  .logo {
+      text-align: center;
+      padding: 0px 30px 0;
+
+      img {
+          height: 80px;
+          object-fit: contain;
+      }
+  }
+
+  .links {
+      text-align: center;
+      padding: 50px 0 30px;
+
+      ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          li {
+              display: inline-block;
+              padding: 10px;
+
+              a {
+                  color: $black-color;
+                  transition: $transition;
+
+                  &:hover {
+                      color: $secondColor;
+                  }
+              }
+          }
+      }
+  }
+
+  .social {
+      text-align: center;
+
+      ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          li {
+              display: inline-block;
+              padding: 5px;
+
+              a {
+                  width: 100%;
+                  height: 100%;
+                  display: inline-flex;
+                  min-width: 50px;
+                  height: 50px;
+                  justify-content: center;
+                  align-items: center;
+                  color: $text-color;
+                  border-radius: 100px;
+                  border: 1px solid $text-color;
+                  transition: $transition;
+
+                  &:hover {
+                      background-color: $mainColor;
+                      color: $white-color;
+                      border: 1px solid $mainColor;
+                      transform: translateY(-5px);
+                  }
+              }
+          }
+      }
+  }
+  .quickLinks{
+    margin-top: 30px;
+    a{
+      padding: 10px;
+      display: inline-block;
+      // color: $mainColor;
+    }
+  }
+}
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
