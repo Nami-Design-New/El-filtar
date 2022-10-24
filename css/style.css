@@ -2023,6 +2023,11 @@ footer .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 768px) {
+  footer .logo img {
+    height: 70px;
+  }
+}
 footer .links {
   text-align: center;
   padding: 50px 0 30px;
@@ -2078,8 +2083,27 @@ footer .quickLinks {
   margin-top: 30px;
 }
 footer .quickLinks a {
-  padding: 10px;
+  padding: 8px;
   display: inline-block;
+  color: #777777;
+}
+footer .quickLinks a:hover {
+  color: #ed693c;
+}
+
+.aboutUs .data {
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  text-align: center;
+}
+.aboutUs .data .logo {
+  height: 70px;
+  margin-bottom: 20px;
+}
+.aboutUs .data p {
+  color: #777777;
+  margin-bottom: 10px;
 }
 
 /* PC device :991px. */
