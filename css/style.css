@@ -1951,7 +1951,6 @@ input::placeholder {
 }
 .myOrderDetails .bill li {
   display: flex;
-  align-items: center;
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 1px dashed #ffffff;
@@ -2166,6 +2165,16 @@ footer .quickLinks a:hover {
 .aboutUs .data p {
   color: #777777;
   margin-bottom: 10px;
+}
+
+.rateModal .modal-content {
+  border-radius: 16px;
+}
+.rateModal .modal-content .modal-header {
+  border: none;
+}
+.rateModal .modal-content .modal-header .modal-title {
+  font-weight: bold;
 }
 
 .commentsModal .modal-content {
