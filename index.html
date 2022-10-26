@@ -41,45 +41,102 @@
     <!-- main section -->
     <section class="main">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 p-2 ">
-            <!-- Swiper -->
-            <div class="swiper mainSliderContainer" data-aos="fade-up">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img/1.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/2.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/3.webp" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+
+        <!-- Swiper -->
+        <div class="swiper mainSliderContainer" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/1.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/2.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/3.webp" alt="">
             </div>
           </div>
-          <div class="col-lg-4 sideData p-2">
-            <a href="#!" class="filterData" data-aos="fade-up">
-              <div class="data">
-                <h1> فلتري </h1>
-                <p> ادخل البيانات لتحصل علي تنبيهات لمواعيد تغيير فلترك </p>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- all shops -->
+    <section class="allShops">
+      <div class="container">
+        <!-- section Title -->
+        <div class="sectionTitle" data-aos="fade-up">
+          <h2 class="title"> جميع البائعين </h2>
+          <a href="all_vendors.html"> الكل <i class="fa-regular fa-chevron-left ms-1"></i> </a>
+        </div>
+        <!-- slider -->
+        <div class="swiperContainer">
+          <div class="swiper allShopsSlider ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop1.png" class="vendorImg" alt="">
+                  <h4> شوب اونلاين </h4>
+                </a>
               </div>
-              <img src="img/ms1.png" alt="">
-            </a>
-            <a href="my_filtar.html" class="nextChangeDate" data-aos="fade-up">
-              <div class="head">
-                <i class="fa-duotone fa-calendar-days me-2"></i>
-                <h5>موعد التغيير القادم :</h5>
-                <h5 class="date"> 1/5/2022 </h5>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop2.png" class="vendorImg" alt="">
+                  <h4> ايزي شوب </h4>
+                </a>
               </div>
-              <div class="timer">
-                <div id="month"></div>
-                <div id="days"></div>
-                <div id="hours"></div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop1.png" class="vendorImg" alt="">
+                  <h4> شوب اونلاين </h4>
+                </a>
               </div>
-            </a>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop2.png" class="vendorImg" alt="">
+                  <h4> ايزي شوب </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop1.png" class="vendorImg" alt="">
+                  <h4> شوب اونلاين </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop2.png" class="vendorImg" alt="">
+                  <h4> ايزي شوب </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop1.png" class="vendorImg" alt="">
+                  <h4> شوب اونلاين </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop2.png" class="vendorImg" alt="">
+                  <h4> ايزي شوب </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop1.png" class="vendorImg" alt="">
+                  <h4> شوب اونلاين </h4>
+                </a>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <a href="vendor.html" class="vendor">
+                  <img src="img/shop2.png" class="vendorImg" alt="">
+                  <h4> ايزي شوب </h4>
+                </a>
+              </div>
+
+            </div>
           </div>
+          <div class="allShopsSliderNext swiper-button-next"></div>
+          <div class="allShopsSliderPrev swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -88,8 +145,8 @@
       <div class="container">
         <!-- section Title -->
         <div class="sectionTitle" data-aos="fade-up">
-          <h2 class="title"> احدث المنتجات في المتجر </h2>
-          <a href="shop.html"> الكل <i class="fa-regular fa-chevron-left ms-1"></i> </a>
+          <h2 class="title"> احدث منتجات البائعين </h2>
+          <a href="all_products.html"> الكل <i class="fa-regular fa-chevron-left ms-1"></i> </a>
         </div>
         <!-- slider -->
         <div class="swiperContainer">
@@ -232,51 +289,6 @@
           <div class="productsSliderNext swiper-button-next"></div>
           <div class="productsSliderPrev swiper-button-prev"></div>
         </div>
-      </div>
-    </section>
-    <!-- latest explanations -->
-    <section class="explanations">
-      <div class="container">
-        <!-- section Title -->
-        <div class="sectionTitle" data-aos="fade-up">
-          <h2 class="title"> احدث الشروحات </h2>
-          <a href="explanations.html"> الكل <i class="fa-regular fa-chevron-left ms-1"></i> </a>
-        </div>
-
-        <div class="explanation row" data-aos="fade-up">
-          <div class="col-md-5 p-1 ">
-            <div class="imgFrame">
-              <img src="img/explanation.png" alt="">
-              <a class="" href="https://www.youtube.com/watch?v=B36iAN4qlug" target="_blank"> 
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class=" col-md-7 p-1 ">
-            <div class="info">
-              <div class="date">
-                <i class="fa-regular fa-calendar-days me-2"></i>
-                <p>30 / مايو / 2022</p>
-              </div>
-              <a href="explanations_details.html">
-                <h3 class="title">
-                  انطلاق شركة نقاء السلسبيل
-                </h3>
-              </a>
-              <p>
-                مما لا شك فيه أن فلاتر المياه من مؤسسه نقاء السلسبيل أصبحت لا غني عنها في زمننا الحالي وذلك بسبب كثرة
-                الملوثات الصناعيه حولنا , ولأن الماء هو شريان الحياه يجب علي كل انسان أ يأمن هذا الشريان سواء لنفسه أو
-                لعائلته أو لاي شخص ,
-              </p>
-
-              <div class="tags">
-                <span>#معلومة </span>
-                <span>#صيانه </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   </content>

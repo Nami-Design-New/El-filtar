@@ -82,6 +82,22 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
+  //products Slider
+  var allShopsSlider = new Swiper(".allShopsSlider", {
+    navigation: {
+      nextEl: ".allShopsSliderNext",
+      prevEl: ".allShopsSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    speed: 800,
+    autoplay: {
+      delay: 1800,
+      disableOnInteraction: false,
+    },
+  });
 
   // quantity
   $(".plus").click(function () {
