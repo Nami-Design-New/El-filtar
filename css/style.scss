@@ -803,11 +803,12 @@ header {
 }
 .vendor {
   padding: 12px;
-  // border-radius: 16px;
-  // box-shadow: $shadow;
-  // background-color: $white-color;
   text-align: center;
-  color: $black-color;
+  display: flex;
+  color: #121212;
+  flex-direction: column;
+  align-items: center;
+
   img {
     width: 132px;
     height: 132px;
@@ -819,6 +820,7 @@ header {
   }
   h4 {
     max-width: 132px;
+    margin: auto;
   }
   &:hover {
     transform: translateY(-5px);
@@ -1913,48 +1915,7 @@ input::placeholder {
     // }
   }
 }
-// footer {
-//   background: linear-gradient($body-color, $white-color);
-//   padding-top: 50px;
-//   margin-top: 20px;
-//   // color: $white-color;
-//   .title {
-//     font-weight: bold;
-//     position: relative;
-//     padding-bottom: 20px;
-//     margin-bottom: 30px;
-//     display: inline-block;
-//     &::after {
-//       content: "";
-//       width: 90%;
-//       height: 2px;
-//       background-color: $mainColor;
-//       position: absolute;
-//       right: 0;
-//       bottom: 4px;
-//     }
-//     &::before {
-//       content: "";
-//       width: 75%;
-//       height: 2px;
-//       background-color: $mainColor;
-//       position: absolute;
-//       right: 0;
-//       bottom: 0;
-//     }
-//   }
-//   .copyR {
-//     padding: 20px;
-//     position: relative;
-//     background-color: #E6F3FA;
-//     color: $black-color;
-//     margin-top: 50px;
-//     .company {
-//       color: $mainColor;
-//       font-weight: bold;
-//     }
-//   }
-// }
+
 footer {
   position: relative;
   display: block;
@@ -1963,7 +1924,7 @@ footer {
   color: $text-color;
   overflow: hidden;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 40px;
   padding-bottom: 30px;
   .container {
     margin: 0px auto;
@@ -1980,7 +1941,7 @@ footer {
       background-position: 50% 0px;
       background-image: url("../img/footer.svg");
       position: absolute;
-      top: 80px;
+      top: 0px;
       left: -50%;
       filter: drop-shadow(0px 0px 30px #00000010);
       @media (max-width: 768px) {

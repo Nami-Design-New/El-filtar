@@ -848,7 +848,10 @@ header .headerAnimate {
 .vendor {
   padding: 12px;
   text-align: center;
+  display: flex;
   color: #121212;
+  flex-direction: column;
+  align-items: center;
 }
 .vendor img {
   width: 132px;
@@ -862,6 +865,7 @@ header .headerAnimate {
 }
 .vendor h4 {
   max-width: 132px;
+  margin: auto;
 }
 .vendor:hover {
   transform: translateY(-5px);
@@ -2011,7 +2015,7 @@ footer {
   color: #777777;
   overflow: hidden;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 footer .container {
@@ -2030,7 +2034,7 @@ footer .container::before {
   background-position: 50% 0px;
   background-image: url("../img/footer.svg");
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: -50%;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.062745098));
 }
