@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8" />
@@ -24,6 +25,7 @@
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <!-- custom cursor  -->
   <div class="customCursor"></div>
@@ -55,7 +57,10 @@
                   </a>
                   <div class="info">
                     <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                    <div class="price"> 2.788 <span> ج.م </span> </div>
+                    <div class="price">
+                      <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                      <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                    </div>
                     <!-- control  -->
                     <div class="control">
                       <div class="quantity">
@@ -76,7 +81,10 @@
                   </a>
                   <div class="info">
                     <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                    <div class="price"> 2.788 <span> ج.م </span> </div>
+                    <div class="price">
+                      <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                      <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                    </div>
                     <!-- control  -->
                     <div class="control">
                       <div class="quantity">
@@ -97,7 +105,10 @@
                   </a>
                   <div class="info">
                     <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                    <div class="price"> 2.788 <span> ج.م </span> </div>
+                    <div class="price">
+                      <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                      <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                    </div>
                     <!-- control  -->
                     <div class="control">
                       <div class="quantity">
@@ -152,7 +163,9 @@
               <div class="d-flex justify-content-between align-content-center flex-wrap py-2">
                 <div class="totalPrice">
                   <p> الاجمالي : </p>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                  </div>
                 </div>
                 <!-- modal btn -->
                 <button data-bs-toggle="modal" data-bs-target="#shipping" class="btnOrange">
@@ -170,15 +183,19 @@
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <label for="phone" class="form-label"> <i class="fa-light fa-phone me-1"></i> رقم الهاتف </label>
+                            <label for="phone" class="form-label"> <i class="fa-light fa-phone me-1"></i> رقم الهاتف
+                            </label>
                             <input type="number" class="form-control" id="phone" placeholder="01**********">
                           </div>
                           <div class="mb-3">
-                            <label for="location" class="form-label"> <i class="fa-light fa-location-dot me-1"></i> العنوان </label>
-                            <input type="text" class="form-control" id="location" placeholder=" مثال : القاهرة شارع الجامعة ">
+                            <label for="location" class="form-label"> <i class="fa-light fa-location-dot me-1"></i>
+                              العنوان </label>
+                            <input type="text" class="form-control" id="location"
+                              placeholder=" مثال : القاهرة شارع الجامعة ">
                           </div>
                           <div class="d-flex justify-content-end mt-5 ">
-                            <button type="button" class="btn mx-1 btn-outline-dark" data-bs-dismiss="modal"> الغاء </button>
+                            <button type="button" class="btn mx-1 btn-outline-dark" data-bs-dismiss="modal"> الغاء
+                            </button>
                             <button type="submit" class="btn mx-1 orange "> ارسال </button>
                           </div>
                         </form>
@@ -231,4 +248,5 @@
     $("footer").load("footer.html");
   </script>
 </body>
+
 </html>

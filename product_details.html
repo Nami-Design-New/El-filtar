@@ -46,7 +46,7 @@
         </button>
         <ul>
           <li>
-            <a href="all_products.html"> البائع </a>
+            <a href="vendor.html"> البائع </a>
           </li>
           <li>
             <a href="vendor.html">
@@ -96,8 +96,115 @@
           <div class="col-lg-8 col-md-6 p-2">
             <div class="info">
               <h2 class="name"> فلتر مياه اكوا برو سبعة مراحل </h2>
+              <div class="d-flex align-content-center flex-wrap">
+                <ul class="rate">
+                  <li> <i class="fa-solid fa-star"></i> </li>
+                  <li> <i class="fa-solid fa-star"></i> </li>
+                  <li> <i class="fa-solid fa-star"></i> </li>
+                  <li> <i class="fa-solid fa-star"></i> </li>
+                  <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                </ul>
+                <p class="ms-2 text-muted"> ( 16 تقييم ) </p>
+                <!-- modal Btn -->
+                <a href="#!" class="ms-2" data-bs-toggle="modal" data-bs-target="#comments"> عرض التعليقات </a>
+                <!-- modal -->
+                <div class="modal fade commentsModal" id="comments" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title"> التعليقات </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="allcomments">
+                          <!-- comment -->
+                          <div class="comment">
+                            <div class="head">
+                              <h5 class="userName"> محمد العشري </h5>
+                              <p class="date"> 10/10/2022 </p>
+                            </div>
+                            <ul class="rate">
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                            </ul>
+                            <p class="massage">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequatur natus magnam
+                              ipsa tenetur cumque architecto delectus consequuntur in cupiditate vero voluptatem ullam
+                              voluptate distinctio velit atque consectetur explicabo eaque?
+                            </p>
+                          </div>
+                          <!-- comment -->
+                          <div class="comment">
+                            <div class="head">
+                              <h5 class="userName"> محمد العشري </h5>
+                              <p class="date"> 10/10/2022 </p>
+                            </div>
+                            <ul class="rate">
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                            </ul>
+                            <p class="massage">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequatur natus magnam
+                              ipsa tenetur cumque architecto delectus consequuntur in cupiditate vero voluptatem ullam
+                              voluptate distinctio velit atque consectetur explicabo eaque?
+                            </p>
+                          </div>
+                          <!-- comment -->
+                          <div class="comment">
+                            <div class="head">
+                              <h5 class="userName"> محمد العشري </h5>
+                              <p class="date"> 10/10/2022 </p>
+                            </div>
+                            <ul class="rate">
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                            </ul>
+                            <p class="massage">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequatur natus magnam
+                              ipsa tenetur cumque architecto delectus consequuntur in cupiditate vero voluptatem ullam
+                              voluptate distinctio velit atque consectetur explicabo eaque?
+                            </p>
+                          </div>
+                          <!-- comment -->
+                          <div class="comment">
+                            <div class="head">
+                              <h5 class="userName"> محمد العشري </h5>
+                              <p class="date"> 10/10/2022 </p>
+                            </div>
+                            <ul class="rate">
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star"></i> </li>
+                              <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                            </ul>
+                            <p class="massage">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequatur natus magnam
+                              ipsa tenetur cumque architecto delectus consequuntur in cupiditate vero voluptatem ullam
+                              voluptate distinctio velit atque consectetur explicabo eaque?
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="d-flex justify-content-between align-content-center flex-wrap py-2">
-                <div class="price"> 2.788 <span> ج.م </span> </div>
+                <div class="price">
+                  <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                  <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                </div>
                 <a href="cart.html" class="btnOrange">
                   اضافة للسلة
                   <i class="fa-solid fa-cart-plus ms-1"></i>
@@ -144,7 +251,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p1.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -155,7 +272,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p2.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -166,7 +293,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p3.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -177,7 +314,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p4.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -188,7 +335,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p5.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -199,7 +356,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p6.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -210,7 +377,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p1.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -221,7 +398,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p2.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -232,7 +419,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p3.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -243,7 +440,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p4.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -254,7 +461,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p5.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop1.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>
@@ -265,7 +482,17 @@
                 <a href="product_details.html" class="product">
                   <img src="img/p6.png" class="productImg" alt="">
                   <h5 class="name"> فلتر مياه اكوا برو سبعة مراحل </h5>
-                  <div class="price"> 2.788 <span> ج.م </span> </div>
+                  <ul class="rate">
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star"></i> </li>
+                    <li> <i class="fa-solid fa-star text-muted"></i> </li>
+                  </ul>
+                  <div class="price">
+                    <div class="currentPrice"> 2,788 <span> ج.م </span> </div>
+                    <div class="oldPrice"> 3,500 <span> ج.م </span> </div>
+                  </div>
                   <div class="shop">
                     <img src="img/shop2.png" class="me-2" alt="">
                     <p> شوب اونلاين </p>

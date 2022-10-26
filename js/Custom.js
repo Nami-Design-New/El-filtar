@@ -83,15 +83,15 @@ $(document).ready(function () {
     },
   });
   //products Slider
-  var allShopsSlider = new Swiper(".allShopsSlider", {
+  var allVendorsSlider = new Swiper(".allVendorsSlider", {
     navigation: {
-      nextEl: ".allShopsSliderNext",
-      prevEl: ".allShopsSliderPrev",
+      nextEl: ".allVendorsSliderNext",
+      prevEl: ".allVendorsSliderPrev",
     },
     // centeredSlides: true,
     // loop: true,
     slidesPerView: "auto",
-    spaceBetween: 12,
+    spaceBetween: 0,
     speed: 800,
     autoplay: {
       delay: 1800,

@@ -779,29 +779,58 @@ header .headerAnimate {
   font-size: 16px !important;
 }
 
-.allShops,
+.allVendors,
 .newestProducts {
   padding: 30px 0;
 }
 
-.allShopsSlider,
+.allVendorsSlider,
 .productsSlider {
   padding: 20px 0;
 }
-.allShopsSlider .swiper-slide,
+.allVendorsSlider .swiper-slide,
 .productsSlider .swiper-slide {
   width: auto !important;
+  height: auto;
 }
 
 .price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.price .currentPrice {
   font-weight: bold;
   font-size: 22px !important;
   color: #ed693c;
+  margin-left: 10px;
 }
-.price span {
+.price .currentPrice span {
   font-weight: normal;
   font-size: 12px !important;
   color: #777777;
+}
+.price .oldPrice {
+  font-size: 16px !important;
+  color: #777777;
+  text-decoration: line-through;
+}
+.price .oldPrice span {
+  font-weight: normal;
+  font-size: 10px !important;
+  text-decoration: line-through;
+}
+
+.rate {
+  padding: 0;
+  margin-bottom: 5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.rate i {
+  color: #ffd700;
 }
 
 .product {
@@ -810,7 +839,9 @@ header .headerAnimate {
   padding: 8px 12px;
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .product .productImg {
   width: 100%;
@@ -828,7 +859,7 @@ header .headerAnimate {
 .product .shop {
   display: flex;
   align-items: center;
-  margin-top: 12px;
+  margin-top: auto;
 }
 .product .shop img {
   width: 32px;
@@ -2015,7 +2046,7 @@ footer {
   color: #777777;
   overflow: hidden;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 footer .container {
@@ -2034,7 +2065,7 @@ footer .container::before {
   background-position: 50% 0px;
   background-image: url("../img/footer.svg");
   position: absolute;
-  top: 0px;
+  top: 20px;
   left: -50%;
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.062745098));
 }
@@ -2135,6 +2166,46 @@ footer .quickLinks a:hover {
 .aboutUs .data p {
   color: #777777;
   margin-bottom: 10px;
+}
+
+.commentsModal .modal-content {
+  border-radius: 16px;
+}
+.commentsModal .modal-content .modal-header {
+  border: none;
+}
+.commentsModal .modal-content .modal-header .modal-title {
+  font-weight: bold;
+}
+.commentsModal .modal-content .allcomments {
+  padding-top: 20px;
+  max-height: 70vh;
+  overflow: auto;
+}
+.commentsModal .modal-content .allcomments .comment {
+  padding: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #eee;
+}
+.commentsModal .modal-content .allcomments .comment:last-child {
+  border: none;
+  margin: 0;
+}
+.commentsModal .modal-content .allcomments .comment .head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+.commentsModal .modal-content .allcomments .comment .head .userName {
+  font-weight: bold;
+}
+.commentsModal .modal-content .allcomments .comment .head .data {
+  color: #777777;
+}
+.commentsModal .modal-content .allcomments .comment .massage {
+  color: #777777;
 }
 
 /* PC device :991px. */
