@@ -73,13 +73,13 @@ $(document).ready(function () {
         slidesPerView: 2,
       },
       576: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       991: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
       1200: {
         slidesPerView: 6,
@@ -103,22 +103,22 @@ $(document).ready(function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,
-      },
-      340: {
         slidesPerView: 2,
       },
-      576: {
+      340: {
         slidesPerView: 3,
       },
-      768: {
+      576: {
         slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 5,
       },
       991: {
         slidesPerView: 6,
       },
       1200: {
-        slidesPerView: 7,
+        slidesPerView: 8,
       },
     },
   });

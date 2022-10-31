@@ -760,6 +760,7 @@ header {
 .price {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   margin-bottom: 10px;
   .currentPrice {
     font-weight: bold;
@@ -807,7 +808,7 @@ header {
   width: 100%;
   .productImg {
     width: 100%;
-    height: 150px;
+    aspect-ratio: 3/2.5;
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 12px;
@@ -815,7 +816,7 @@ header {
   .name {
     color: $black-color;
     margin-bottom: 12px;
-    max-width: 170px;
+    // max-width: 170px;
   }
   .shop {
     display: flex;
@@ -847,8 +848,8 @@ header {
   height: 100%;
 
   img {
-    width: 132px;
-    height: 132px;
+    width: 100%;
+    aspect-ratio: 1/1;
     object-fit: contain;
     background-color: $body-color;
     margin-bottom: 10px;
