@@ -71,7 +71,6 @@ p {
   }
 }
 
-
 video,
 img {
   max-width: 100%;
@@ -595,10 +594,10 @@ header {
   }
 }
 .main {
-  margin-bottom: 30px;
-  @media (max-width: 992px) {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 10px;
+  // @media (max-width: 992px) {
+  //   margin-bottom: 10px;
+  // }
   .mainSliderContainer {
     border-radius: 16px;
   }
@@ -747,7 +746,7 @@ header {
 }
 .allVendors,
 .newestProducts {
-  padding: 30px 0;
+  padding: 20px 0 30px;
 }
 .allVendorsSlider,
 .productsSlider {
@@ -761,7 +760,6 @@ header {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin-bottom: 10px;
   .currentPrice {
     font-weight: bold;
     font-size: 22px !important;
@@ -787,7 +785,7 @@ header {
 
 .rate {
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -797,6 +795,7 @@ header {
   }
 }
 .product {
+  position: relative;
   border: 1px solid #dadada;
   border-radius: 16px;
   padding: 8px 12px;
@@ -804,6 +803,7 @@ header {
   transition: $transition;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   height: 100%;
   width: 100%;
   .productImg {
@@ -811,30 +811,65 @@ header {
     aspect-ratio: 3/2.5;
     object-fit: contain;
     border-radius: 8px;
-    margin-bottom: 12px;
   }
-  .name {
-    color: $black-color;
-    margin-bottom: 12px;
-    // max-width: 170px;
-  }
-  .shop {
+  .data {
     display: flex;
-    align-items: center;
-    margin-top: auto;
-    img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-      border-radius: 100%;
-    }
-    p {
+    flex-direction: column;
+    gap: 10px;
+    .name {
       color: $black-color;
+      // max-width: 170px;
+    }
+    .shop {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        border-radius: 100%;
+      }
+      p {
+        color: $black-color;
+      }
     }
   }
   &:hover {
     box-shadow: $BigShadow;
     transform: translateY(-10px);
+  }
+}
+
+.specialProducts {
+  // margin-bottom: 20px;
+  position: relative;
+  .product {
+    flex-direction: row;
+    align-items: center;
+    .productImg{
+      width: 150px;
+      @media (max-width:1200px) {
+        width: 100px;
+
+      }
+    }
+    .data{
+      padding: 10px;
+    }
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+  .special{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $gold;
+    color: $black-color;
+    padding: 6px 12px;
+    border-radius: 100px;
   }
 }
 .vendor {

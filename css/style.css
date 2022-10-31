@@ -621,12 +621,7 @@ header .headerAnimate {
 }
 
 .main {
-  margin-bottom: 30px;
-}
-@media (max-width: 992px) {
-  .main {
-    margin-bottom: 0px;
-  }
+  margin-bottom: 10px;
 }
 .main .mainSliderContainer {
   border-radius: 16px;
@@ -782,7 +777,7 @@ header .headerAnimate {
 
 .allVendors,
 .newestProducts {
-  padding: 30px 0;
+  padding: 20px 0 30px;
 }
 
 .allVendorsSlider,
@@ -798,7 +793,6 @@ header .headerAnimate {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 .price .currentPrice {
   font-weight: bold;
@@ -824,7 +818,7 @@ header .headerAnimate {
 
 .rate {
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -835,6 +829,7 @@ header .headerAnimate {
 }
 
 .product {
+  position: relative;
   border: 1px solid #dadada;
   border-radius: 16px;
   padding: 8px 12px;
@@ -842,6 +837,7 @@ header .headerAnimate {
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   height: 100%;
   width: 100%;
 }
@@ -851,30 +847,65 @@ header .headerAnimate {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 12px;
 }
-.product .name {
+.product .data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product .data .name {
   color: #121212;
-  margin-bottom: 12px;
 }
-.product .shop {
+.product .data .shop {
   display: flex;
   align-items: center;
   margin-top: auto;
 }
-.product .shop img {
+.product .data .shop img {
   width: 32px;
   height: 32px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 100%;
 }
-.product .shop p {
+.product .data .shop p {
   color: #121212;
 }
 .product:hover {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
   transform: translateY(-10px);
+}
+
+.specialProducts {
+  position: relative;
+}
+.specialProducts .product {
+  flex-direction: row;
+  align-items: center;
+}
+.specialProducts .product .productImg {
+  width: 150px;
+}
+@media (max-width: 1200px) {
+  .specialProducts .product .productImg {
+    width: 100px;
+  }
+}
+.specialProducts .product .data {
+  padding: 10px;
+}
+.specialProducts .product:hover {
+  box-shadow: none;
+  transform: none;
+}
+.specialProducts .special {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ffd700;
+  color: #121212;
+  padding: 6px 12px;
+  border-radius: 100px;
 }
 
 .vendor {

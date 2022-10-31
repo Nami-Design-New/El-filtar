@@ -51,6 +51,33 @@ $(document).ready(function () {
     },
   });
   //products Slider
+  var specialProductsSlider = new Swiper(".specialProductsSlider", {
+    navigation: {
+      nextEl: ".specialProductsSliderNext",
+      prevEl: ".specialProductsSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  //products Slider
   var productsSlider = new Swiper(".productsSlider", {
     navigation: {
       nextEl: ".productsSliderNext",
