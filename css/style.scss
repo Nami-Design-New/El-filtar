@@ -748,6 +748,8 @@ header {
 .newestProducts {
   padding: 20px 0 30px;
 }
+.specialProductsSlider,
+.offersSlider ,
 .allVendorsSlider,
 .productsSlider {
   padding: 20px 0;
@@ -834,6 +836,15 @@ header {
         color: $black-color;
       }
     }
+  }
+  .sale{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: $secondColor;
+    color: $white-color;
+    padding: 6px 12px;
+    border-radius: 100px;
   }
   &:hover {
     box-shadow: $BigShadow;

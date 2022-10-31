@@ -77,6 +77,42 @@ $(document).ready(function () {
       },
     },
   });
+  //offers Slider
+  var offersSlider = new Swiper(".offersSlider", {
+    navigation: {
+      nextEl: ".offersSliderNext",
+      prevEl: ".offersSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      340: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    },
+  });
   //products Slider
   var productsSlider = new Swiper(".productsSlider", {
     navigation: {

@@ -780,10 +780,14 @@ header .headerAnimate {
   padding: 20px 0 30px;
 }
 
+.specialProductsSlider,
+.offersSlider,
 .allVendorsSlider,
 .productsSlider {
   padding: 20px 0;
 }
+.specialProductsSlider .swiper-slide,
+.offersSlider .swiper-slide,
 .allVendorsSlider .swiper-slide,
 .productsSlider .swiper-slide {
   height: auto;
@@ -870,6 +874,15 @@ header .headerAnimate {
 }
 .product .data .shop p {
   color: #121212;
+}
+.product .sale {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #0285ce;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 100px;
 }
 .product:hover {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
