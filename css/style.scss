@@ -70,6 +70,8 @@ p {
     padding: 0px 8px;
   }
 }
+
+
 video,
 img {
   max-width: 100%;
@@ -740,6 +742,7 @@ header {
     align-items: center;
     font-weight: bold;
     font-size: 16px !important;
+    padding-right: 10px;
   }
 }
 .allVendors,
@@ -750,7 +753,7 @@ header {
 .productsSlider {
   padding: 20px 0;
   .swiper-slide {
-    width: auto !important;
+    // width: auto !important;
     height: auto;
   }
 }
@@ -758,7 +761,7 @@ header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
-  .currentPrice{
+  .currentPrice {
     font-weight: bold;
     font-size: 22px !important;
     color: $mainColor;
@@ -769,7 +772,7 @@ header {
       color: $text-color;
     }
   }
-  .oldPrice{
+  .oldPrice {
     font-size: 16px !important;
     color: $text-color;
     text-decoration: line-through;
@@ -777,22 +780,20 @@ header {
       font-weight: normal;
       font-size: 10px !important;
       text-decoration: line-through;
-
     }
   }
 }
 
-.rate{
+.rate {
   padding: 0;
   margin-bottom: 5px;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 2px;
-  i{
+  i {
     color: $gold;
   }
-
 }
 .product {
   border: 1px solid #dadada;
@@ -803,6 +804,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   .productImg {
     width: 100%;
     height: 150px;
@@ -835,12 +837,14 @@ header {
   }
 }
 .vendor {
-  padding: 12px;
+  padding: 12px 6px;
   text-align: center;
   display: flex;
   color: #121212;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
 
   img {
     width: 132px;
@@ -1003,7 +1007,6 @@ header {
       }
     }
   }
-
 }
 .search {
   display: flex;
@@ -2074,57 +2077,56 @@ footer {
   }
 }
 
-.rateModal{
-  .modal-content{
+.rateModal {
+  .modal-content {
     border-radius: 16px;
-    .modal-header{
+    .modal-header {
       border: none;
-      .modal-title{
+      .modal-title {
         font-weight: bold;
       }
     }
   }
-
 }
 
-.commentsModal{
-  .modal-content{
+.commentsModal {
+  .modal-content {
     border-radius: 16px;
-    .modal-header{
+    .modal-header {
       border: none;
-      .modal-title{
+      .modal-title {
         font-weight: bold;
       }
     }
-    .allcomments{
+    .allcomments {
       padding-top: 20px;
       max-height: 70vh;
       overflow: auto;
-      .comment{
+      .comment {
         padding: 5px;
         margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px dashed #eee;
-        &:last-child{
+        &:last-child {
           border: none;
           margin: 0;
         }
 
-        .head{
+        .head {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
           margin-bottom: 5px;
 
-          .userName{
+          .userName {
             font-weight: bold;
           }
-          .data{
+          .data {
             color: $text-color;
           }
         }
 
-        .massage{
+        .massage {
           color: $text-color;
         }
       }

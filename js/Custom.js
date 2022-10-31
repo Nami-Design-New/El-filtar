@@ -50,7 +50,79 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
+  //products Slider
+  var productsSlider = new Swiper(".productsSlider", {
+    navigation: {
+      nextEl: ".productsSliderNext",
+      prevEl: ".productsSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      340: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      991: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    },
+  });
+  //all Vendors Slider
+  var allVendorsSlider = new Swiper(".allVendorsSlider", {
+    navigation: {
+      nextEl: ".allVendorsSliderNext",
+      prevEl: ".allVendorsSliderPrev",
+    },
+    // centeredSlides: true,
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 5,
+    speed: 800,
+    autoplay: {
+      delay: 1800,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      340: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      991: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 7,
+      },
+    },
+  });
+  // count Down Date
   var countDownDate = new Date("nov 29, 2022").getTime();
   var myFunc = setInterval(function () {
     var now = new Date().getTime();
@@ -65,40 +137,6 @@ $(document).ready(function () {
     document.getElementById("days").innerHTML = days + "<span> يوم </span>";
     document.getElementById("hours").innerHTML = hours + "<span> ساعة </span> ";
   }, 1000);
-
-  //products Slider
-  var productsSlider = new Swiper(".productsSlider", {
-    navigation: {
-      nextEl: ".productsSliderNext",
-      prevEl: ".productsSliderPrev",
-    },
-    // centeredSlides: true,
-    // loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 12,
-    speed: 1000,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-  });
-  //products Slider
-  var allVendorsSlider = new Swiper(".allVendorsSlider", {
-    navigation: {
-      nextEl: ".allVendorsSliderNext",
-      prevEl: ".allVendorsSliderPrev",
-    },
-    // centeredSlides: true,
-    // loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    speed: 800,
-    autoplay: {
-      delay: 1800,
-      disableOnInteraction: false,
-    },
-  });
-
   // quantity
   $(".plus").click(function () {
     $(this)
@@ -111,7 +149,6 @@ $(document).ready(function () {
         .next()
         .val(+$(this).next().val() - 1);
   });
-
   // show div
   $("#changeDate").change(function () {
     $(".filtarDates").slideToggle(300);
