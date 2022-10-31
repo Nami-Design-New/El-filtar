@@ -62,7 +62,7 @@ $(document).ready(function () {
     spaceBetween: 10,
     speed: 1000,
     autoplay: {
-      delay: 2000,
+      delay: 2500,
       disableOnInteraction: false,
     },
     breakpoints: {
