@@ -594,10 +594,10 @@ header {
   }
 }
 .main {
-  margin-bottom: 10px;
-  // @media (max-width: 992px) {
-  //   margin-bottom: 10px;
-  // }
+  margin-bottom: 30px;
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
   .mainSliderContainer {
     border-radius: 16px;
   }
@@ -629,6 +629,61 @@ header {
     //     height: 100%;
     //   }
     // }
+  }
+}
+.mainContent {
+  display: flex;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  .statistics {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      flex-direction: row;
+      padding: 16px 0;
+      flex-wrap: wrap;
+    }
+    .statistic {
+      width: 200px;
+      height: 100%;
+      background-color: #0285ce20;
+      border: 2px solid $white-color;
+      text-align: center;
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: $transition;
+
+      @media  (min-width: 750px ) and (max-width: 1000px) {
+        width: 160px;
+      }
+      @media  (min-width: 340px) and (max-width: 420px) {
+        width: 150px;
+      }
+      @media (max-width: 340px) {
+        width: 120px;
+      }
+
+      span {
+        font-size: 25px;
+        font-weight: bold;
+        color: $mainColor;
+        small {
+          font-size: 12px;
+          color: $text-color;
+        }
+      }
+    }
   }
 }
 .sideData {
@@ -749,7 +804,7 @@ header {
   padding: 20px 0 30px;
 }
 .specialProductsSlider,
-.offersSlider ,
+.offersSlider,
 .allVendorsSlider,
 .productsSlider {
   padding: 20px 0;
@@ -757,6 +812,11 @@ header {
     // width: auto !important;
     height: auto;
   }
+}
+
+.allVendors{
+  background-color: #0285ce10;
+  margin-bottom: 30px;
 }
 .price {
   display: flex;
@@ -837,7 +897,7 @@ header {
       }
     }
   }
-  .sale{
+  .sale {
     position: absolute;
     left: 10px;
     top: 10px;
@@ -858,14 +918,13 @@ header {
   .product {
     flex-direction: row;
     align-items: center;
-    .productImg{
+    .productImg {
       width: 150px;
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         width: 100px;
-
       }
     }
-    .data{
+    .data {
       padding: 10px;
     }
     &:hover {
@@ -873,7 +932,7 @@ header {
       transform: none;
     }
   }
-  .special{
+  .special {
     position: absolute;
     right: 10px;
     top: 10px;
