@@ -650,7 +650,9 @@ header {
       flex-wrap: wrap;
     }
     .statistic {
-      width: 200px;
+      min-width: 150px;
+      width: 100%;
+      flex: 1;
       height: 100%;
       background-color: #0285ce20;
       border: 2px solid $white-color;
@@ -663,16 +665,6 @@ header {
       justify-content: center;
       gap: 10px;
       transition: $transition;
-
-      @media (min-width: 750px) and (max-width: 1000px) {
-        width: 160px;
-      }
-      @media (min-width: 340px) and (max-width: 420px) {
-        width: 170px;
-      }
-      @media (max-width: 380px) {
-        width: 130px;
-      }
 
       span {
         font-size: 25px;
