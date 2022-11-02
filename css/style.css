@@ -700,12 +700,12 @@ header .headerAnimate {
 }
 @media (min-width: 340px) and (max-width: 420px) {
   .mainContent .statistics .statistic {
-    width: 150px;
+    width: 170px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 380px) {
   .mainContent .statistics .statistic {
-    width: 120px;
+    width: 130px;
   }
 }
 .mainContent .statistics .statistic span {
