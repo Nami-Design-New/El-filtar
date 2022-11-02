@@ -961,6 +961,54 @@ header .headerAnimate {
   transform: translateY(-10px);
 }
 
+.form-switch .form-check-input {
+  height: 22px;
+  width: 44px;
+}
+
+.offerSwitch {
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offerOptions {
+  display: none;
+  padding: 16px;
+  background-color: rgba(2, 133, 206, 0.062745098);
+  margin-top: 10px;
+  border-radius: 16px;
+}
+.offerOptions .dateDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+}
+.offerOptions .dateDiv .dateInput {
+  flex: 1;
+}
+.offerOptions .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.offerOptions .nav-tabs .nav-link {
+  background-color: #777777;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  padding: 16px;
+  min-width: 100px;
+}
+.offerOptions .nav-tabs .nav-link.active {
+  background-color: #ed693c;
+}
+
 .specialProducts {
   position: relative;
 }

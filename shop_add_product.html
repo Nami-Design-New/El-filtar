@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8" />
@@ -29,7 +28,6 @@
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
   <!-- custom cursor  -->
   <div class="customCursor"></div>
@@ -68,7 +66,7 @@
         <section class="account">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-lg-6 m-auto p-0">
+              <div class="col-md-10 col-xl-8 m-auto p-0">
                 <div class="card">
                   <form action="shop_product_details.html">
                     <!-- input -->
@@ -99,6 +97,55 @@
                       <div class="input-group">
                         <input type="number" class="form-control" id="location" placeholder=" 00 ">
                         <span class="input-group-text"> ج.م </span>
+                      </div>
+                    </div>
+                    <!-- input -->
+                    <div class="mb-3">
+                      <!-- offer switch -->
+                      <div class="form-check form-switch offerSwitch">
+                        <label class="form-check-label" for="addOffer"> <i class="fa-solid fa-tags me-1"></i> اضافة خصم
+                        </label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="addOffer">
+                      </div>
+                      <!-- offer options -->
+                      <div class="offerOptions">
+                        <div class="nav nav-tabs" role="tablist">
+                          <!-- value btn -->
+                          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#value" type="button"
+                            role="tab"> قيمة </button>
+                            <!-- percent btn -->
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#percent" type="button"
+                            role="tab"> نسبة </button>
+                        </div>
+                        <div class="tab-content">
+                          <!-- value -->
+                          <div class="tab-pane fade show active" id="value" role="tabpanel">
+                            <div class="input-group">
+                              <input type="number" class="form-control" id="location" placeholder=" 00 ">
+                              <span class="input-group-text"> ج.م </span>
+                            </div>
+                          </div>
+                          <!-- percent -->
+                          <div class="tab-pane fade" id="percent" role="tabpanel">
+                            <div class="input-group">
+                              <input type="number" class="form-control" id="location" placeholder=" 00 ">
+                              <span class="input-group-text"> % </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="dateDiv">
+                          <div class="dateInput">
+                            <label for="startDate" class="form-label"> <i class="fa-solid fa-calendar-days me-1"></i>
+                              تاريخ البدء  </label>
+                            <input type="date" class="form-control" id="startDate">
+                          </div>
+                          <div class="dateInput">
+                            <label for="endDate" class="form-label"> <i class="fa-solid fa-calendar-days me-1"></i>
+                              تاريخ الانتهاء  </label>
+                            <input type="date" class="form-control" id="endDate">
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <!-- input -->
@@ -163,6 +210,10 @@
   <script>
     $('.dropify').dropify();
   </script>
+  <script>
+    $('#addOffer').change(function () {
+      $('.offerOptions').slideToggle(300)
+    });
+  </script>
 </body>
-
 </html>

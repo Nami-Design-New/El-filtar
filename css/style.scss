@@ -664,10 +664,10 @@ header {
       gap: 10px;
       transition: $transition;
 
-      @media  (min-width: 750px ) and (max-width: 1000px) {
+      @media (min-width: 750px) and (max-width: 1000px) {
         width: 160px;
       }
-      @media  (min-width: 340px) and (max-width: 420px) {
+      @media (min-width: 340px) and (max-width: 420px) {
         width: 170px;
       }
       @media (max-width: 380px) {
@@ -814,7 +814,7 @@ header {
   }
 }
 
-.allVendors{
+.allVendors {
   background-color: #0285ce10;
   margin-bottom: 30px;
 }
@@ -909,6 +909,58 @@ header {
   &:hover {
     box-shadow: $BigShadow;
     transform: translateY(-10px);
+  }
+}
+
+.form-switch .form-check-input {
+  height: 22px;
+  width: 44px;
+}
+
+.offerSwitch {
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offerOptions {
+  display: none;
+  padding: 16px;
+  background-color: #0285ce10;
+  margin-top: 10px;
+  border-radius: 16px;
+
+  .dateDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+   
+    .dateInput {
+      flex: 1;
+    }
+  }
+
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: none;
+    .nav-link {
+      background-color: $text-color;
+      color: $white-color;
+      border: none;
+      border-radius: 8px;
+      flex: 1;
+      padding: 16px;
+      min-width: 100px;
+
+      &.active {
+        background-color: $mainColor;
+      }
+    }
   }
 }
 
