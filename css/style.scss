@@ -904,54 +904,71 @@ header {
   }
 }
 
-.form-switch .form-check-input {
-  height: 22px;
-  width: 44px;
-}
-
-.offerSwitch {
-  padding: 0;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.offerOptions {
-  display: none;
-  padding: 16px;
-  background-color: #0285ce10;
-  margin-top: 10px;
-  border-radius: 16px;
-
-  .dateDiv {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-top: 20px;
-   
-    .dateInput {
-      flex: 1;
-    }
+// offer
+.offerSection {
+  .form-switch .form-check-input {
+    height: 22px;
+    width: 44px;
+    box-shadow: none;
   }
 
-  .nav-tabs {
+  .form-check-input:checked {
+    background-color: $mainColor;
+    border-color: $mainColor;
+  }
+  .offerSwitch {
+    padding: 0;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
-    border: none;
-    .nav-link {
-      background-color: $text-color;
-      color: $white-color;
-      border: none;
-      border-radius: 8px;
-      flex: 1;
-      padding: 16px;
-      min-width: 100px;
+    justify-content: space-between;
+  }
 
-      &.active {
-        background-color: $mainColor;
+  .offerOptions {
+    display: none;
+    padding: 16px;
+    background-color: #0285ce10;
+    margin-top: 10px;
+    border-radius: 16px;
+
+    .dateDiv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 20px;
+
+      .dateInput {
+        flex: 1;
       }
+    }
+
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+      border: none;
+      .nav-link {
+        background-color: $text-color;
+        color: $white-color;
+        border: none;
+        border-radius: 8px;
+        flex: 1;
+        padding: 16px;
+        min-width: 100px;
+
+        &.active {
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
+  .finalPrice {
+    padding: 20px 0 5px;
+    text-align: end;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+      color: $mainColor;
     }
   }
 }

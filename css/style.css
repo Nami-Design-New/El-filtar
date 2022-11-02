@@ -948,42 +948,45 @@ header .headerAnimate {
   transform: translateY(-10px);
 }
 
-.form-switch .form-check-input {
+.offerSection .form-switch .form-check-input {
   height: 22px;
   width: 44px;
+  box-shadow: none;
 }
-
-.offerSwitch {
+.offerSection .form-check-input:checked {
+  background-color: #ed693c;
+  border-color: #ed693c;
+}
+.offerSection .offerSwitch {
   padding: 0;
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-
-.offerOptions {
+.offerSection .offerOptions {
   display: none;
   padding: 16px;
   background-color: rgba(2, 133, 206, 0.062745098);
   margin-top: 10px;
   border-radius: 16px;
 }
-.offerOptions .dateDiv {
+.offerSection .offerOptions .dateDiv {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding-top: 20px;
 }
-.offerOptions .dateDiv .dateInput {
+.offerSection .offerOptions .dateDiv .dateInput {
   flex: 1;
 }
-.offerOptions .nav-tabs {
+.offerSection .offerOptions .nav-tabs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
   border: none;
 }
-.offerOptions .nav-tabs .nav-link {
+.offerSection .offerOptions .nav-tabs .nav-link {
   background-color: #777777;
   color: #ffffff;
   border: none;
@@ -992,8 +995,17 @@ header .headerAnimate {
   padding: 16px;
   min-width: 100px;
 }
-.offerOptions .nav-tabs .nav-link.active {
+.offerSection .offerOptions .nav-tabs .nav-link.active {
   background-color: #ed693c;
+}
+.offerSection .finalPrice {
+  padding: 20px 0 5px;
+  text-align: end;
+}
+.offerSection .finalPrice span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ed693c;
 }
 
 .specialProducts {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8" />
@@ -28,6 +29,7 @@
   <!-- Custom style  -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <!-- custom cursor  -->
   <div class="customCursor"></div>
@@ -100,7 +102,7 @@
                       </div>
                     </div>
                     <!-- input -->
-                    <div class="mb-3">
+                    <div class="mb-3 offerSection">
                       <!-- offer switch -->
                       <div class="form-check form-switch offerSwitch">
                         <label class="form-check-label" for="addOffer"> <i class="fa-solid fa-tags me-1"></i> اضافة خصم
@@ -113,7 +115,7 @@
                           <!-- value btn -->
                           <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#value" type="button"
                             role="tab"> قيمة </button>
-                            <!-- percent btn -->
+                          <!-- percent btn -->
                           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#percent" type="button"
                             role="tab"> نسبة </button>
                         </div>
@@ -133,19 +135,21 @@
                             </div>
                           </div>
                         </div>
-
+                        <!-- date -->
                         <div class="dateDiv">
                           <div class="dateInput">
                             <label for="startDate" class="form-label"> <i class="fa-solid fa-calendar-days me-1"></i>
-                              تاريخ البدء  </label>
+                              تاريخ البدء </label>
                             <input type="date" class="form-control" id="startDate">
                           </div>
                           <div class="dateInput">
                             <label for="endDate" class="form-label"> <i class="fa-solid fa-calendar-days me-1"></i>
-                              تاريخ الانتهاء  </label>
+                              تاريخ الانتهاء </label>
                             <input type="date" class="form-control" id="endDate">
                           </div>
                         </div>
+                        <!-- The final price -->
+                        <h6 class="finalPrice"> السعر النهائي <span> 00 </span> ج.م </h6>
                       </div>
                     </div>
                     <!-- input -->
@@ -216,4 +220,5 @@
     });
   </script>
 </body>
+
 </html>
