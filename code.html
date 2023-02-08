@@ -48,7 +48,7 @@
               <form action="user_type.html">
                 <div class="mb-3 text-center">
                   <label class="form-label"> برجاء كتابة كود التفعيل المرسل الى الرقم <span> 0123456789 </span> </label>
-                  <div class="vCode" id="vCode">
+                  <div class="vCode">
                     <input class="vCode-input mx-1" type="text" name="opt-field[]" maxlength=1>
                     <input class="vCode-input mx-1" type="text" name="opt-field[]" maxlength=1>
                     <input class="vCode-input mx-1" type="text" name="opt-field[]" maxlength=1>
@@ -134,10 +134,8 @@
         .on("keyup", function (e) {
           let key = e.keyCode || e.charCode;
           if (key == 8 || key == 46 || key == 37 || key == 40) {
-            // Backspace or Delete or Left Arrow or Down Arrow
             $(this).prev().focus();
           } else if (key == 38 || key == 39 || $(this).val() != "") {
-            // Right Arrow or Top Arrow or Value not empty
             $(this).next().focus();
           }
         })
